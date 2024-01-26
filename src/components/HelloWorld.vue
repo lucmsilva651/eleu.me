@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <div class="greetings">
-    <h1><b>{{ msg }}</b></h1>
+    <h1 class="green">{{ msg }}</h1>
     <h3>
       Hello! I am Lucas (aka. lucmsilva/eleu), and this is <a href="https://eleu.me">my portfolio</a>.
     </h3>
