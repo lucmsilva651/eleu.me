@@ -14,7 +14,7 @@ import SupportIcon from './icons/IconSupport.vue'
     </template>
     <template #heading>Who I am?</template>
 
-    I am a 14 y.o. brazilian guy who lives searching for new things to explore and
+    I am a 14 y.o. Brazilian guy who lives searching for new things to explore and
     new ways to make things simply work. I make websites, shell scripts, and
     some other things.
   </WelcomeItem>
@@ -23,22 +23,12 @@ import SupportIcon from './icons/IconSupport.vue'
     <template #icon>
       <ToolingIcon />
     </template>
-    <template #heading>Tooling</template>
+    <template #heading>My projects</template>
 
-    This project is served and bundled with
-    <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Vite</a>. The
-    recommended IDE setup is
-    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank" rel="noopener">Volar</a>. If
-    you need to test your components and web pages, check out
-    <a href="https://www.cypress.io/" target="_blank" rel="noopener">Cypress</a> and
-    <a href="https://on.cypress.io/component" target="_blank" rel="noopener"
-      >Cypress Component Testing</a
-    >.
-
-    <br />
-
-    More instructions are available in <code>README.md</code>.
+    I will leave all of my projects in my GitHub account:
+    <a href="https://github.com/lucmsilva651" target="_blank" rel="noopener">
+      <font-awesome-icon :icon="['fa-brands fa-github']" /> GitHub/lucmsilva651
+    </a>
   </WelcomeItem>
 
   <WelcomeItem>
