@@ -14,9 +14,16 @@ import SupportIcon from './icons/IconSupport.vue'
     </template>
     <template #heading>Who I am?</template>
 
-    I am a 14 y.o. Brazilian guy who lives searching for new things to explore and
-    new ways to make things simply work. I make websites, shell scripts, and
-    some other things.
+    I am a 14 y.o. Brazilian guy who lives searching for new things to explore and new ways to make things simply work. 
+  </WelcomeItem>
+
+  <WelcomeItem>
+    <template #icon>
+      <EcosystemIcon />
+    </template>
+    <template #heading>What I do?</template>
+
+    I make websites, shell scripts, digital art and some other things.
   </WelcomeItem>
 
   <WelcomeItem>
@@ -29,22 +36,6 @@ import SupportIcon from './icons/IconSupport.vue'
     <a href="https://github.com/lucmsilva651" target="_blank" rel="noopener">
       GitHub/lucmsilva651
     </a>
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <EcosystemIcon />
-    </template>
-    <template #heading>Ecosystem</template>
-
-    Get official tools and libraries for your project:
-    <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a>,
-    <a href="https://router.vuejs.org/" target="_blank" rel="noopener">Vue Router</a>,
-    <a href="https://test-utils.vuejs.org/" target="_blank" rel="noopener">Vue Test Utils</a>, and
-    <a href="https://github.com/vuejs/devtools" target="_blank" rel="noopener">Vue Dev Tools</a>. If
-    you need more resources, we suggest paying
-    <a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">Awesome Vue</a>
-    a visit.
   </WelcomeItem>
 
   <WelcomeItem>
