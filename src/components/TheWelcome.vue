@@ -56,15 +56,19 @@ import SupportIcon from './icons/IconSupport.vue'
     <a href="https://github.com/lucmsilva651" target="_blank" rel="noopener">
       GitHub/lucmsilva651
     </a>
+    |
     <a href="https://youtube.com/lucmsilva651" target="_blank" rel="noopener">
       YouTube/lucmsilva651
     </a>
+    |
     <a href="https://facebook.com/lucmsilva" target="_blank" rel="noopener">
       Facebook/lucmsilva
     </a>
+    |
     <a href="https://tiktok.com/@lucmsilva" target="_blank" rel="noopener">
       TikTok/lucmsilva
     </a>
+    |
     <a href="https://instagram.com/lucasgabm95" target="_blank" rel="noopener">
       Instagram/lucasgabm95
     </a>
