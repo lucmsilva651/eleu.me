@@ -12,11 +12,11 @@ import SupportIcon from './icons/IconSupport.vue'
     <template #icon>
       <DocumentationIcon />
     </template>
-    <template #heading>Documentation</template>
+    <template #heading>Who I am?</template>
 
-    Vue’s
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
-    provides you with all information you need to get started.
+    I am a 14 y.o. brazilian guy who lives searching for new things to explore and
+    new ways to make things simply work. I make websites, shell scripts, and
+    some other things.
   </WelcomeItem>
 
   <WelcomeItem>
