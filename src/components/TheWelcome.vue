@@ -51,18 +51,23 @@ import SupportIcon from './icons/IconSupport.vue'
     <template #icon>
       <CommunityIcon />
     </template>
-    <template #heading>Community</template>
+    <template #heading>Social media</template>
 
-    Got stuck? Ask your question on
-    <a href="https://chat.vuejs.org" target="_blank" rel="noopener">Vue Land</a>, our official
-    Discord server, or
-    <a href="https://stackoverflow.com/questions/tagged/vue.js" target="_blank" rel="noopener"
-      >StackOverflow</a
-    >. You should also subscribe to
-    <a href="https://news.vuejs.org" target="_blank" rel="noopener">our mailing list</a> and follow
-    the official
-    <a href="https://twitter.com/vuejs" target="_blank" rel="noopener">@vuejs</a>
-    twitter account for latest news in the Vue world.
+    <a href="https://github.com/lucmsilva651" target="_blank" rel="noopener">
+      GitHub/lucmsilva651
+    </a>
+    <a href="https://youtube.com/lucmsilva651" target="_blank" rel="noopener">
+      YouTube/lucmsilva651
+    </a>
+    <a href="https://facebook.com/lucmsilva" target="_blank" rel="noopener">
+      Facebook/lucmsilva
+    </a>
+    <a href="https://tiktok.com/@lucmsilva" target="_blank" rel="noopener">
+      TikTok/lucmsilva
+    </a>
+    <a href="https://instagram.com/lucasgabm95" target="_blank" rel="noopener">
+      Instagram/lucasgabm95
+    </a>
   </WelcomeItem>
 
   <WelcomeItem>
