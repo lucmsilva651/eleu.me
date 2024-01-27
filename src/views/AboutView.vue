@@ -10,6 +10,7 @@
       Hosted and tested on
       <a href="https://www.vercel.com" target="_blank" rel="noopener">Vercel</a>.
     </h3>
+    <br>
     <img src="https://count.getloli.com/get/@lucmsilva?theme=asoul" />
   </div>
 </template>
