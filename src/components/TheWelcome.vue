@@ -71,6 +71,6 @@ import SupportIcon from './icons/IconSupport.vue'
     </template>
     <template #heading>Support me</template>
 
-    Support me following my social media and rating my work. I can't accept donations by now. (Pix soon) But thanks for the visit.
-  </WelcomeItem>/
+    Support me following my social media and rating my work.
+  </WelcomeItem>
 </template>
