@@ -34,7 +34,7 @@ import SupportIcon from './icons/IconSupport.vue'
 
     I will leave all of my projects in my GitHub account:
     <a href="https://github.com/lucmsilva651" target="_blank" rel="noopener">
-      GitHub/lucmsilva651
+      <font-awesome-icon icon="fa-brands fa-github" /> GitHub
     </a>
   </WelcomeItem>
 
@@ -45,7 +45,7 @@ import SupportIcon from './icons/IconSupport.vue'
     <template #heading>Social media</template>
 
     <a href="https://github.com/lucmsilva651" target="_blank" rel="noopener">
-      <font-awesome-icon icon="fa-brands fa-github" /> GitHub
+      
     </a>
 
     <a href="https://youtube.com/lucmsilva651" target="_blank" rel="noopener">
