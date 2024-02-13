@@ -5,12 +5,13 @@ import ToolingIcon from './icons/IconTooling.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 </script>
 
 <template>
   <WelcomeItem>
     <template #icon>
-      <DocumentationIcon />
+      <font-awesome-icon icon="fa-solid fa-book" />
     </template>
     <template #heading>Who I am?</template>
 
