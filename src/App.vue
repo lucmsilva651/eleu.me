@@ -11,8 +11,12 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="Welcome!" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">
+          <font-awesome-icon icon="fa-solid fa-circle-info" />Home
+        </RouterLink>
+        <RouterLink to="/about">
+          <font-awesome-icon icon="fa-solid fa-circle-info" />About
+        </RouterLink>
       </nav>
     </div>
   </header>

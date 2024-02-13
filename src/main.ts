@@ -20,7 +20,9 @@ import {
     faCube,
     faToolbox,
     faMessage,
-    faHeart
+    faHeart,
+    faHome,
+    faCircleinfo
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -33,7 +35,9 @@ library.add(
     faCube,
     faToolbox,
     faMessage,
-    faHeart
+    faHeart,
+    faHome,
+    faCircleinfo
 );
 
 const app = createApp(App);
