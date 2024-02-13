@@ -21,8 +21,6 @@ import {
     faToolbox,
     faMessage,
     faHeart,
-    faHome,
-    faCircleinfo
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -35,7 +33,7 @@ library.add(
     faCube,
     faToolbox,
     faMessage,
-    faHeart,
+    faHeart
 );
 
 const app = createApp(App);
