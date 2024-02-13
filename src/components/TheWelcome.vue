@@ -43,25 +43,26 @@ import SupportIcon from './icons/IconSupport.vue'
       <CommunityIcon />
     </template>
     <template #heading>Social media</template>
+    Consider supporting me following my social media profiles:
 
     <a href="https://github.com/lucmsilva651" target="_blank" rel="noopener">
-      <font-awesome-icon icon="fa-brands fa-github" />/lucmsilva651
+      <font-awesome-icon icon="fa-brands fa-github" />
     </a>
 
     <a href="https://youtube.com/lucmsilva651" target="_blank" rel="noopener">
-      <font-awesome-icon icon="fa-brands fa-youtube" />/lucmsilva651
+      <font-awesome-icon icon="fa-brands fa-youtube" />
     </a>
 
     <a href="https://facebook.com/lucmsilva" target="_blank" rel="noopener">
-      <font-awesome-icon icon="fa-brands fa-facebook" />/lucmsilva
+      <font-awesome-icon icon="fa-brands fa-facebook" />
     </a>
 
     <a href="https://tiktok.com/@lucmsilva" target="_blank" rel="noopener">
-      <font-awesome-icon icon="fa-brands fa-tiktok" />/lucmsilva
+      <font-awesome-icon icon="fa-brands fa-tiktok" />
     </a>
 
     <a href="https://instagram.com/lucasgabm95" target="_blank" rel="noopener">
-      <font-awesome-icon icon="fa-brands fa-instagram" />/lucasgabm95
+      <font-awesome-icon icon="fa-brands fa-instagram" />
     </a>
   </WelcomeItem>
 
@@ -71,6 +72,6 @@ import SupportIcon from './icons/IconSupport.vue'
     </template>
     <template #heading>Support me</template>
 
-    Support me following my social media and rating my work. I can't accept donations by now. But thanks for the visit.
-  </WelcomeItem>
+    Support me following my social media and rating my work. I can't accept donations by now. (Pix soon) But thanks for the visit.
+  </WelcomeItem>/
 </template>
