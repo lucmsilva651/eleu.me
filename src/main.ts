@@ -15,12 +15,25 @@ import {
     faGithub
 } from '@fortawesome/free-brands-svg-icons'
 
+import {
+    faBook,
+    faCube,
+    faToolbox,
+    faMessage,
+    faHeart
+} from '@fortawesome/free-solid-svg-icons'
+
 library.add(
     faYoutube,
     faFacebook,
     faTiktok,
     faInstagram,
-    faGithub
+    faGithub, 
+    faBook,
+    faCube,
+    faToolbox,
+    faMessage,
+    faHeart
 );
 
 const app = createApp(App);

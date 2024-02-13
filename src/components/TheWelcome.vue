@@ -20,7 +20,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
   <WelcomeItem>
     <template #icon>
-      <EcosystemIcon />
+      <font-awesome-icon icon="fa-solid fa-cube" />
     </template>
     <template #heading>What I do?</template>
 
@@ -29,7 +29,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
   <WelcomeItem>
     <template #icon>
-      <ToolingIcon />
+      <font-awesome-icon icon="fa-solid fa-toolbox" />
     </template>
     <template #heading>My projects</template>
 
@@ -41,7 +41,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
   <WelcomeItem>
     <template #icon>
-      <CommunityIcon />
+      <font-awesome-icon icon="fa-solid fa-message" />
     </template>
     <template #heading>Social media</template>
 
@@ -68,7 +68,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
   <WelcomeItem>
     <template #icon>
-      <SupportIcon />
+      <font-awesome-icon icon="fa-solid fa-heart" />
     </template>
     <template #heading>Support me</template>
 
