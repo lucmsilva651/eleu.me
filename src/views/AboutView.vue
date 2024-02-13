@@ -9,6 +9,9 @@
       <br>
       Hosted and tested on
       <a href="https://www.vercel.com" target="_blank" rel="noopener">Vercel</a>.
+      <br>
+      Profile picture by
+      <a href="https://gleicecomms.carrd.co/" target="_blank" rel="noopener">Gleicinha Arts</a>.
     </h3>
   </div>
 </template>
