@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     </template>
     <template #heading>Who I am?</template>
 
-    I am a 14 y.o. Brazilian guy who lives searching for new things to explore and new ways to make things simply work. 
+    I'm a 14-year-old Brazilian curious about new things to explore in the programming scene.
   </WelcomeItem>
 
   <WelcomeItem>
