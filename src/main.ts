@@ -7,9 +7,21 @@ import router from './router'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-import { all } from '@fortawesome/free-brands-svg-icons'
+import {
+    faYoutube,
+    faFacebook,
+    faTiktok,
+    faInstagram,
+    faGithub
+} from '@fortawesome/free-brands-svg-icons'
 
-library.add(...all)
+library.add(
+    faYoutube,
+    faFacebook,
+    faTiktok,
+    faInstagram,
+    faGithub
+);
 
 const app = createApp(App);
 
