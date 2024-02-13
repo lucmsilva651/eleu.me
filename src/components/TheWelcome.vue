@@ -45,7 +45,7 @@ import SupportIcon from './icons/IconSupport.vue'
     <template #heading>Social media</template>
 
     <a href="https://github.com/lucmsilva651" target="_blank" rel="noopener">
-      
+      <font-awesome-icon icon="fa-brands fa-github" /> GitHub
     </a>
 
     <a href="https://youtube.com/lucmsilva651" target="_blank" rel="noopener">
