@@ -8,6 +8,8 @@
   --vt-c-black-soft: #222222;
   --vt-c-black-mute: #282828;
 
+  --dark-exclusive-bg: #24242E;
+
   --vt-c-indigo: #2c3e50;
 
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
@@ -38,7 +40,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: var(--vt-c-black);
+    --color-background: var(--dark-exclusive-bg);
     --color-background-soft: var(--vt-c-black-soft);
     --color-background-mute: var(--vt-c-black-mute);
 
