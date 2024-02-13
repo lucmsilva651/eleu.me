@@ -43,7 +43,6 @@ import SupportIcon from './icons/IconSupport.vue'
       <CommunityIcon />
     </template>
     <template #heading>Social media</template>
-    Consider supporting me following my social media profiles:
 
     <a href="https://github.com/lucmsilva651" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-brands fa-github" />
