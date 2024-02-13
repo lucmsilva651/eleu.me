@@ -44,22 +44,27 @@ import SupportIcon from './icons/IconSupport.vue'
     </template>
     <template #heading>Social media</template>
 
+    <font-awesome-icon icon="fa-brands fa-github" />
     <a href="https://github.com/lucmsilva651" target="_blank" rel="noopener">
       GitHub/lucmsilva651
     </a>
     |
+    <font-awesome-icon icon="fa-brands fa-youtube" />
     <a href="https://youtube.com/lucmsilva651" target="_blank" rel="noopener">
       YouTube/lucmsilva651
     </a>
     |
+    <font-awesome-icon icon="fa-brands fa-facebook" />
     <a href="https://facebook.com/lucmsilva" target="_blank" rel="noopener">
       Facebook/lucmsilva
     </a>
     |
+    <font-awesome-icon icon="fa-brands fa-tiktok" />
     <a href="https://tiktok.com/@lucmsilva" target="_blank" rel="noopener">
       TikTok/lucmsilva
     </a>
     |
+    <font-awesome-icon icon="fa-brands fa-instagram" />
     <a href="https://instagram.com/lucasgabm95" target="_blank" rel="noopener">
       Instagram/lucasgabm95
     </a>
