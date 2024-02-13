@@ -36,8 +36,6 @@ library.add(
     faToolbox,
     faMessage,
     faHeart,
-    faHome,
-    faCircleinfo
 );
 
 const app = createApp(App);
