@@ -14,7 +14,8 @@ import {
     faInstagram,
     faGithub,
     faSteam,
-    faLastfm
+    faLastfm,
+    faTwitter
 } from '@fortawesome/free-brands-svg-icons'
 
 import {
@@ -35,6 +36,7 @@ library.add(
     faGithub,
     faSteam,
     faLastfm,
+    faTwitter
     faBook,
     faCube,
     faToolbox,
