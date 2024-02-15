@@ -78,7 +78,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
       <font-awesome-icon icon="fa-solid fa-heart" />
     </template>
     <template #heading>Support me</template>
-
-    Support me following my social media and rating my work.
+    
+    <a href="https://instagram.com/lucasgabm95" target="_blank" rel="noopener">
+      <font-awesome-icon icon="fa-solid fa-circle-dollar-to-slot" /> Buy Me A Coffee
+    </a>
   </WelcomeItem>
 </template>
