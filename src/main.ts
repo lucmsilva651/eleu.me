@@ -26,7 +26,7 @@ import {
     faHeart,
     faTired,
     faSmile,
-    faCircledollartoslot
+    faCircledollarslot
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -45,7 +45,7 @@ library.add(
     faHeart,
     faTired,
     faSmile,
-    faCircledollartoslot
+    faCircledollarslot
 );
 
 const app = createApp(App);
