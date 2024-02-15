@@ -9,14 +9,13 @@
 
 root {
   --solid-color: #0f0f0f;
+  --hover-bg: #0f0f0f33;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --solid-color: #f5f5f5;
-  }
-  a:hover {
-      background-color: #FFFFFF33;
+    --hover-bg: #ffffff33;
   }
 }
 
@@ -30,7 +29,7 @@ a,
 
 @media (hover: hover) {
   a:hover {
-    background-color: #0F0F0F33;
+    background-color: var(--hover-bg);
   }
 }
 
