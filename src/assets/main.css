@@ -7,10 +7,20 @@
   font-weight: normal;
 }
 
+root {
+  --solid-color: #0f0f0f
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --solid-color: #f5f5f5
+  }
+}
+
 a,
 .solid {
   text-decoration: none;
-  color: #f5f5f5;
+  color: var(--solid-color);
   transition: 0.4s;
   padding: 3px;
 }
