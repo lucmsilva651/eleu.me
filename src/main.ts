@@ -12,7 +12,9 @@ import {
     faFacebook,
     faTiktok,
     faInstagram,
-    faGithub
+    faGithub,
+    faSteam,
+    faLast
 } from '@fortawesome/free-brands-svg-icons'
 
 import {
@@ -30,7 +32,9 @@ library.add(
     faFacebook,
     faTiktok,
     faInstagram,
-    faGithub, 
+    faGithub,
+    faSteam,
+    faLast,
     faBook,
     faCube,
     faToolbox,
