@@ -1,3 +1,7 @@
+<script setup lang="ts">
+    import WelcomeItem from '../components/WelcomeItem.vue'
+</script>
+
 <template>
   <template #heading>404 Not Found</template>
   Whoops, it seems that this page was not found!
