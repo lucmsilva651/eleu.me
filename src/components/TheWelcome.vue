@@ -49,7 +49,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     </a>
 
     <a href="https://last.fm/user/lucmsilva" target="_blank" rel="noopener">
-      <font-awesome-icon icon="fa-brands fa-last-fm" /> Last.fm
+      <font-awesome-icon icon="fa-brands fa-lastfm" /> Last.fm
     </a>
 
     <a href="https://youtube.com/lucmsilva651" target="_blank" rel="noopener">
