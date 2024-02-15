@@ -79,8 +79,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     </template>
     <template #heading>Support me</template>
     
+    Rate my work and
     <a href="https://buymeacoffee.com/lucmsilva" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-solid fa-circle-dollar-to-slot" /> Buy Me a Coffee
     </a>
+    !
   </WelcomeItem>
 </template>
