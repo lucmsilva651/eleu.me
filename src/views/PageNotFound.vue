@@ -4,8 +4,13 @@ import WelcomeItem from '../components/WelcomeItem.vue'
 
 <template>
   <WelcomeItem>
+    <template #icon>
+      <font-awesome-icon icon="fa-solid fa-face-tired" />
+    </template>
     <template #heading>404 Not Found</template>
+    
     Whoops, it seems that this page was not found!
+    
     You can try:
     <RouterLink to="/">Go to Home</RouterLink>
   </WelcomeItem>
