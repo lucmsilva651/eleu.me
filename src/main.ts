@@ -26,7 +26,7 @@ import {
     faHeart,
     faTired,
     faSmile,
-    faCircledollarslot
+    faCdollarslot
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
