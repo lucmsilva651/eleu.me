@@ -57,7 +57,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     </a>
 
     <a href="https://youtube.com/lucmsilva651" target="_blank" rel="noopener">
-      <font-awesome-icon icon="fa-brands fa-youtube">YouTube</font-awesome-icon>
+      <font-awesome-icon icon="fa-brands fa-youtube" /> YouTube
     </a>
 
     <a href="https://facebook.com/lucmsilva" target="_blank" rel="noopener">
