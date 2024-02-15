@@ -48,6 +48,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
       <font-awesome-icon icon="fa-brands fa-steam" /> Steam
     </a>
 
+    <a href="https://twitter.com/lucmsilvagg" target="_blank" rel="noopener">
+      <font-awesome-icon icon="fa-brands fa-twitter" /> Twitter
+    </a>
+
     <a href="https://last.fm/user/lucmsilva" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-brands fa-lastfm" /> Last.fm
     </a>
