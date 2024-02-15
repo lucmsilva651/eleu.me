@@ -1,18 +1,25 @@
+<script setup lang="ts">
+import WelcomeItem from '../components/WelcomeItem.vue'
+</script>
+
 <template>
   <div class="about">
-    <h3>
+    <WelcomeItem>
+      <template #icon>
+        <font-awesome-icon icon="fa-solid fa-face-smile" />
+      </template>
+      <template #heading>About this website</template>
+
       This website is made with
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
-      <br>
-      Using the <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a> template.
       <br>
       Hosted and tested on
       <a href="https://www.vercel.com" target="_blank" rel="noopener">Vercel</a>.
       <br>
       Profile picture by
-      <a href="https://gleicecomms.carrd.co/" target="_blank" rel="noopener">Gleicinha Arts</a>.
-    </h3>
+      <a href="https://gleicecomms.carrd.co/" target="_blank" rel="noopener">Gleicinha Arts</a>
+    </WelcomeItem>
   </div>
 </template>
 
