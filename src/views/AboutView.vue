@@ -11,14 +11,16 @@ import WelcomeItem from '../components/WelcomeItem.vue'
       <template #heading>About this website</template>
 
       This website is made with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
       <br>
       Hosted and tested on
-      <a href="https://www.vercel.com" target="_blank" rel="noopener">Vercel</a>.
+      <a href="https://www.vercel.com/" target="_blank" rel="noopener">Vercel</a>.
+      <br>
+      Icons by
+      <a href="https://fontawesome.com/" target="_blank" rel="noopener">FontAwesome</a>.
       <br>
       Profile picture by
-      <a href="https://gleicecomms.carrd.co/" target="_blank" rel="noopener">Gleicinha Arts</a>
+      <a href="https://gleicecomms.carrd.co/" target="_blank" rel="noopener">Gleicinha Arts</a>.
     </WelcomeItem>
   </div>
 </template>
