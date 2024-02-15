@@ -36,7 +36,7 @@ library.add(
     faGithub,
     faSteam,
     faLastfm,
-    faTwitter
+    faTwitter,
     faBook,
     faCube,
     faToolbox,
