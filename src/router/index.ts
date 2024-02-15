@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import PageNotFound from '.../views/PageNotFound.vue'
 
+export default router;
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -11,8 +13,7 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '*',
-      name: 'pagenotfound',
+      path: '/:catchAll(.*)*',
       component: PageNotFound
     },
     {
