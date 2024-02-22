@@ -13,9 +13,6 @@ import HelloWorld from './components/HelloWorld.vue'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
-        <a href="http://forum.eleu.me" target="_blank" rel="noopener">
-          Forum
-        </a>
         <a href="https://github.com/lucmsilva651/eleu.me" target="_blank" rel="noopener">
           <font-awesome-icon icon="fa-brands fa-github" /> Source
         </a>
