@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import WelcomeItem from '../components/WelcomeItem.vue'
+import HomeItem from '../components/HomeItem.vue'
 </script>
 
 <template>
   <div class="about">
-    <WelcomeItem>
+    <HomeItem>
       <template #icon>
         <font-awesome-icon icon="fa-solid fa-face-smile" />
       </template>
@@ -21,7 +21,7 @@ import WelcomeItem from '../components/WelcomeItem.vue'
       <br>
       Profile picture by
       <a href="https://gleicecomms.carrd.co/" target="_blank" rel="noopener">Gleicinha Arts</a>.
-    </WelcomeItem>
+    </HomeItem>
   </div>
 </template>
 

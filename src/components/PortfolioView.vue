@@ -1,28 +1,28 @@
 <script setup lang="ts">
-import WelcomeItem from './WelcomeItem.vue'
+import HomeItem from './HomeItem.vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 </script>
 
 <template>
-  <WelcomeItem>
+  <HomeItem>
     <template #icon>
       <font-awesome-icon icon="fa-solid fa-book" />
     </template>
     <template #heading>Who am I?</template>
 
     I'm Brazilian, I'm 14 years old and I'm always curious about new things to explore in the world of programming.
-  </WelcomeItem>
+  </HomeItem>
 
-  <WelcomeItem>
+  <HomeItem>
     <template #icon>
       <font-awesome-icon icon="fa-solid fa-cube" />
     </template>
     <template #heading>What do I do?</template>
 
     I create websites, scripts, digital art and a few other things.
-  </WelcomeItem>
+  </HomeItem>
 
-  <WelcomeItem>
+  <HomeItem>
     <template #icon>
       <font-awesome-icon icon="fa-solid fa-toolbox" />
     </template>
@@ -47,9 +47,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     <a href="https://www.python.org/" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-brands fa-python" /> Python
     </a>
-  </WelcomeItem>
+  </HomeItem>
 
-  <WelcomeItem>
+  <HomeItem>
     <template #icon>
       <font-awesome-icon icon="fa-solid fa-message" />
     </template>
@@ -86,9 +86,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     <a href="https://instagram.com/lucasgabm95/" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-brands fa-instagram" /> Instagram
     </a>
-  </WelcomeItem>
+  </HomeItem>
 
-  <WelcomeItem>
+  <HomeItem>
     <template #icon>
       <font-awesome-icon icon="fa-solid fa-heart" />
     </template>
@@ -99,5 +99,5 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
       <font-awesome-icon icon="fa-solid fa-circle-dollar-to-slot" /> Buy Me a Coffee
     </a>
     !
-  </WelcomeItem>
+  </HomeItem>
 </template>

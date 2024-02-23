@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import WelcomeItem from '../components/WelcomeItem.vue'
+import HomeItem from '../components/HomeItem.vue'
 </script>
 
 <template>
   <div class="notfound">
-    <WelcomeItem>
+    <HomeItem>
       <template #icon>
         <font-awesome-icon icon="fa-solid fa-face-tired" />
       </template>
@@ -14,7 +14,7 @@ import WelcomeItem from '../components/WelcomeItem.vue'
       
       You can try:
       <RouterLink to="/">Go to Home</RouterLink>
-    </WelcomeItem>
+    </HomeItem>
   </div>
 </template>
 
