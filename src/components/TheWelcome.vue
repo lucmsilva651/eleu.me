@@ -41,11 +41,11 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     </a>
     
     <a href="https://en.wikipedia.org/wiki/Batch_file/" target="_blank" rel="noopener">
-      <font-awesome-icon icon="fa-brands fa-terminal" /> Batchfile
+      <font-awesome-icon icon="fa-solid fa-terminal" /> Batchfile
     </a>
 
     <a href="https://www.python.org/" target="_blank" rel="noopener">
-      <font-awesome-icon icon="fa-solid fa-python" /> Python
+      <font-awesome-icon icon="fa-brands fa-python" /> Python
     </a>
   </WelcomeItem>
 
