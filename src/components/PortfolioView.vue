@@ -53,7 +53,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     <template #icon>
       <font-awesome-icon icon="fa-solid fa-message" />
     </template>
-    <template #heading>Social media</template>
+    <template #heading>My social media</template>
 
     <a href="https://github.com/lucmsilva651/" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-brands fa-github" /> GitHub
@@ -92,7 +92,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     <template #icon>
       <font-awesome-icon icon="fa-solid fa-heart" />
     </template>
-    <template #heading>Support me</template>
+    <template #heading>Support me!</template>
     
     Rate my work and
     <a href="https://buymeacoffee.com/lucmsilva" target="_blank" rel="noopener">
