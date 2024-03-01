@@ -49,7 +49,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     </a>
     
     <a href="https://www.python.org/" target="_blank" rel="noopener">
-      <img src="https://github.com/lucmsilva651/cdn/raw/main/GDevelop%20G%20logo%20(purple%20background).svg"> GDevelop
+      <font-awesome-icon icon="fa-solid fa-g" /> GDevelop
     </a>
     
     <a href="https://git-scm.com/" target="_blank" rel="noopener">
