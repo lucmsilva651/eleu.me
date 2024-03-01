@@ -26,7 +26,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     <template #icon>
       <font-awesome-icon icon="fa-solid fa-toolbox" />
     </template>
-    <template #heading>What do I work with?</template>
+    <template #heading>What can I work with?</template>
 
     <a href="https://vuejs.org/" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-brands fa-vuejs" /> Vue
@@ -46,6 +46,14 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
     <a href="https://www.python.org/" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-brands fa-python" /> Python
+    </a>
+    
+    <a href="https://www.python.org/" target="_blank" rel="noopener">
+      <img src="https://github.com/lucmsilva651/cdn/raw/main/GDevelop%20G%20logo%20(purple%20background).svg"> GDevelop
+    </a>
+    
+    <a href="https://git-scm.com/" target="_blank" rel="noopener">
+      <font-awesome-icon icon="fa-brands fa-git-alt" /> Git
     </a>
   </HomeItem>
 
