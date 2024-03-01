@@ -48,7 +48,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
       <font-awesome-icon icon="fa-brands fa-python" /> Python
     </a>
     
-    <a href="https://www.python.org/" target="_blank" rel="noopener">
+    <a href="https://gdevelop.io/" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-solid fa-g" /> GDevelop
     </a>
     
