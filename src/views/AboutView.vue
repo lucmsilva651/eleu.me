@@ -21,6 +21,9 @@ import HomeItem from '../components/HomeItem.vue'
       <br>
       Profile picture by
       <a href="https://gleicecomms.carrd.co/" target="_blank" rel="noopener">Gleicinha Arts</a>.
+      Mailing service by
+      <br>
+      <a href="https://improvmx.com/" target="_blank" rel="noopener">ImprovMX</a>.
     </HomeItem>
   </div>
 </template>
