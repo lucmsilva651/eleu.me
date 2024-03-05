@@ -13,7 +13,7 @@ import HomeItem from '../components/HomeItem.vue'
       This website is made with
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
       <br>
-      Hosted and tested on
+      Hosted on
       <a href="https://www.vercel.com/" target="_blank" rel="noopener">Vercel</a>.
       <br>
       Icons by
