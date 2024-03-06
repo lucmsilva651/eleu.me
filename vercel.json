@@ -1,0 +1,7 @@
+{
+    "regions": ["gru1"],
+    "framework": "vue",
+    "github": {
+        "autoJobCancelation": true
+    }
+}
