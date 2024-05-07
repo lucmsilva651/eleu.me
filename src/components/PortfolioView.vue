@@ -71,10 +71,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
       <font-awesome-icon icon="fa-brands fa-github" /> GitHub
     </a>
     
-    <a href="https://t.me/itztwilightz/" target="_blank" rel="noopener">
-      <font-awesome-icon icon="fa-brands fa-telegram" /> Telegram
-    </a>
-
     <a href="https://steamcommunity.com/id/lucmsilva/" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-brands fa-steam" /> Steam
     </a>
