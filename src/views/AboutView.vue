@@ -24,6 +24,9 @@ import HomeItem from '../components/HomeItem.vue'
       <br>
       Mailing service by
       <a href="https://improvmx.com/" target="_blank" rel="noopener">ImprovMX</a>.
+      <br>
+      DDoS protection and security by
+      <a href="https://www.cloudflare.com" target="_blank" rel="noopener">Cloudflare</a>.
     </HomeItem>
   </div>
 </template>
