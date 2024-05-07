@@ -39,6 +39,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     <a href="https://www.w3.org/css/" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-brands fa-css3" /> CSS
     </a>
+
+    <a href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank" rel="noopener">
+      <font-awesome-icon icon="fa-brands fa-js" /> JavaScript
+    </a>
     
     <a href="https://en.wikipedia.org/wiki/Batch_file" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-solid fa-terminal" /> Batchfile
