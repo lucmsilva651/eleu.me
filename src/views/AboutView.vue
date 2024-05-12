@@ -22,10 +22,7 @@ import HomeItem from '../components/HomeItem.vue'
       Profile picture by
       <a href="https://gleicecomms.carrd.co/" target="_blank" rel="noopener">Gleicinha Arts</a>.
       <br>
-      Mailing service by
-      <a href="https://improvmx.com/" target="_blank" rel="noopener">ImprovMX</a>.
-      <br>
-      DDoS protection and security by
+      DDoS protection, mailing, security and optmization by
       <a href="https://www.cloudflare.com" target="_blank" rel="noopener">Cloudflare</a>.
     </HomeItem>
   </div>
