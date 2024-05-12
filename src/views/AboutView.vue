@@ -22,7 +22,7 @@ import HomeItem from '../components/HomeItem.vue'
       Profile picture by
       <a href="https://gleicecomms.carrd.co/" target="_blank" rel="noopener">Gleicinha Arts</a>.
       <br>
-      DDoS protection, mailing, security and optmization by
+      DDoS protection, mailing, security and optimization by
       <a href="https://www.cloudflare.com" target="_blank" rel="noopener">Cloudflare</a>.
     </HomeItem>
   </div>
