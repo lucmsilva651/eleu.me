@@ -24,6 +24,7 @@ import HomeItem from '../components/HomeItem.vue'
       <br>
       DDoS protection, mailing, security and optimization by
       <a href="https://www.cloudflare.com" target="_blank" rel="noopener">Cloudflare</a>.
+      <br>
       *.evs.net.br domain by
       <a href="https://freedns.afraid.org" target="_blank" rel="noopener">FreeDNS</a>.
     </HomeItem>
