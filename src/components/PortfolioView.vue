@@ -113,3 +113,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     !
   </HomeItem>
 </template>
+
+<style>
+a {
+  display: inline-block;
+}
+</style>
