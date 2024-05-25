@@ -117,5 +117,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 <style>
 a {
   display: inline-block;
+  margin-right: 3px;
+  margin-top: -3px;
 }
 </style>
