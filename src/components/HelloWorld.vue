@@ -8,7 +8,7 @@ defineProps<{
   <div class="greetings">
     <h1 class="solid">{{ msg }}</h1>
     <h3>
-      Hello! I am Lucas (aka. lucmsilva/eleu), and this is <RouterLink to="/">my website</RouterLink>.
+      Hello! I am Lucas (aka. lucmsilva/eleu), and this is my website.
     </h3>
   </div>
 </template>
