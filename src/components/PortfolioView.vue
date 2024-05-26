@@ -48,12 +48,20 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
       <font-awesome-icon icon="fa-brands fa-python" /> Python
     </a>
     
-    <a href="https://en.wikipedia.org/wiki/Batch_file" target="_blank" rel="noopener">
+    <a href="https://wikipedia.org/wiki/Batch_file" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-solid fa-terminal" /> Batchfile
     </a>
 
-    <a href="https://nodejs.org/en" target="_blank" rel="noopener">
+    <a href="https://nodejs.org/" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-brands fa-node" /> Node.js
+    </a>
+
+    <a href="https://gamemaker.io/" target="_blank" rel="noopener">
+      <v-icon name="vi-file-type-gamemaker2" /> GameMaker
+    </a>
+
+    <a href="https://gdevelop.io" target="_blank" rel="noopener">
+      <font-awesome-icon icon="fa-solid fa-g" /> GDevelop
     </a>
     
     <a href="https://git-scm.com/" target="_blank" rel="noopener">
@@ -62,10 +70,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
     <a href="https://www.npmjs.com/" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-brands fa-npm" /> npm
-    </a>
-
-    <a href="https://www.microsoft.com/windows" target="_blank" rel="noopener">
-      <font-awesome-icon icon="fa-brands fa-windows" /> Windows
     </a>
   </HomeItem>
 
