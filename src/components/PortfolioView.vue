@@ -103,10 +103,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
       <font-awesome-icon icon="fa-brands fa-tiktok" /> TikTok
     </a>
 
-    <a href="https://steamcommunity.com/id/lucmsilva/" target="_blank" rel="noopener">
-      <font-awesome-icon icon="fa-brands fa-steam" /> Steam
-    </a>
-
     <a href="https://twitter.com/lucmsilvagg/" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-brands fa-twitter" /> Twitter
     </a>
