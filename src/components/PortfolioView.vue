@@ -87,8 +87,12 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
       <font-awesome-icon icon="fa-brands fa-youtube" /> YouTube
     </a>
 
-    <a href="https://last.fm/user/lucmsilva/" target="_blank" rel="noopener">
-      <font-awesome-icon icon="fa-brands fa-lastfm" /> Last.fm
+    <a href="https://steamcommunity.com/id/lucmsilva/" target="_blank" rel="noopener">
+      <font-awesome-icon icon="fa-brands fa-steam" /> Steam
+    </a>
+
+    <a href="https://lucmsilva.itch.io/" target="_blank" rel="noopener">
+      <font-awesome-icon icon="fa-brands fa-itch-io" /> Itch.io
     </a>
 
     <a href="https://tiktok.com/@lucmsilva/" target="_blank" rel="noopener">
