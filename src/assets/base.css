@@ -52,6 +52,12 @@
   }
 }
 
+@media (prefers-color-scheme: light) {
+  img {
+    border-radius: 50%;
+  }
+}
+
 *,
 *::before,
 *::after {
