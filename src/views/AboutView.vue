@@ -29,6 +29,9 @@ import HomeItem from '../components/HomeItem.vue'
       <br>
       *.evs.net.br domain by
       <a href="https://freedns.afraid.org" target="_blank" rel="noopener">FreeDNS</a>.
+      <br>
+      Fonts by
+      <a href="https://fonts.google.com" target="_blank" rel="noopener">Google Fonts</a>.
     </HomeItem>
   </div>
 </template>
