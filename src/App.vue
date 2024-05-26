@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="GitHub Profile Picture" class="logo" src="https://avatars.githubusercontent.com/u/90426410" width="125" height="125" />
+    <img alt="GitHub Profile Picture" class="logo" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/90426410" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="Welcome!" />
