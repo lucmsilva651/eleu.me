@@ -51,6 +51,10 @@ import HomeItem from './HomeItem.vue'
       <v-icon name="hi-solid-terminal" /> Batchfile
     </a>
 
+    <a href="https://en.wikipedia.org/wiki/Shell_script" target="_blank" rel="noopener">
+      <v-icon name="hi-solid-terminal" /> Shell
+    </a>
+
     <a href="https://nodejs.org/" target="_blank" rel="noopener">
       <v-icon name="fa-node" /> Node.js
     </a>
