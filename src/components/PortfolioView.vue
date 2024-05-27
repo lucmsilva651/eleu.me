@@ -55,7 +55,11 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     <a href="https://nodejs.org/" target="_blank" rel="noopener">
       <font-awesome-icon icon="fa-brands fa-node" /> Node.js
     </a>
-
+    
+    <a href="https://nasm.us/" target="_blank" rel="noopener">
+      <font-awesome-icon icon="fa-brands fa-nasm" /> NASM
+    </a>
+    
     <a href="https://gamemaker.io/" target="_blank" rel="noopener">
       <v-icon name="vi-file-type-gamemaker2" /> GameMaker
     </a>
