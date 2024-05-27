@@ -51,8 +51,12 @@ import HomeItem from './HomeItem.vue'
       <v-icon name="hi-solid-terminal" /> Batchfile
     </a>
 
-    <a href="https://en.wikipedia.org/wiki/Shell_script" target="_blank" rel="noopener">
+    <a href="https://wikipedia.org/wiki/Shell_script" target="_blank" rel="noopener">
       <v-icon name="hi-solid-terminal" /> Shell
+    </a>
+
+    <a href="https://learn.microsoft.com/previous-versions/t0aew7h6(v=vs.85)" target="_blank" rel="noopener">
+      <v-icon name="hi-solid-terminal" /> VBScript
     </a>
 
     <a href="https://nodejs.org/" target="_blank" rel="noopener">

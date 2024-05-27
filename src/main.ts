@@ -21,6 +21,7 @@ import {
     RiNpmjsFill,
     SiAssemblyscript,
     BiFlower1,
+    RiFilePaper2Fill,
     // social media
     FaGithub,
     SiYoutube,
@@ -57,6 +58,7 @@ addIcons(
     RiNpmjsFill,
     SiAssemblyscript,
     BiFlower1,
+    RiFilePaper2Fill,
     // social media
     FaGithub,
     SiYoutube,
