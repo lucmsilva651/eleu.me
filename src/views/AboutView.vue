@@ -6,7 +6,7 @@ import HomeItem from '../components/HomeItem.vue'
   <div class="about">
     <HomeItem>
       <template #icon>
-        <font-awesome-icon icon="fa-solid fa-face-smile" />
+        <v-icon name="fa-smile" />
       </template>
       <template #heading>About this website</template>
 
@@ -17,8 +17,6 @@ import HomeItem from '../components/HomeItem.vue'
       <a href="https://www.vercel.com/" target="_blank" rel="noopener">Vercel</a>.
       <br>
       Icons by
-      <a href="https://fontawesome.com/" target="_blank" rel="noopener">FontAwesome</a>
-      and
       <a href="https://oh-vue-icons.js.org/" target="_blank" rel="noopener">Oh, Vue Icons!</a>.
       <br>
       Profile picture by

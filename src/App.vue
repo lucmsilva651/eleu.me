@@ -14,7 +14,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <a href="https://github.com/lucmsilva651/eleu.me" target="_blank" rel="noopener">
-          <font-awesome-icon icon="fa-brands fa-github" /> Source
+          <v-icon name="fa-github" /> Source
         </a>
       </nav>
     </div>
