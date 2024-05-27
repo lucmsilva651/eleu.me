@@ -56,6 +56,10 @@ import HomeItem from './HomeItem.vue'
     </a>
     
     <a href="https://gamemaker.io/" target="_blank" rel="noopener">
+      <v-icon name="si-assemblyscript" /> Assembly (x86)
+    </a>
+    
+    <a href="https://gamemaker.io/" target="_blank" rel="noopener">
       <v-icon name="vi-file-type-light-gamemaker2" /> GameMaker
     </a>
 

@@ -19,6 +19,7 @@ import {
     FaBlogger,
     SiGit,
     RiNpmjsFill,
+    SiAssemblyscript,
     // social media
     FaGithub,
     SiYoutube,
@@ -53,6 +54,7 @@ addIcons(
     FaBlogger,
     SiGit,
     RiNpmjsFill,
+    SiAssemblyscript,
     // social media
     FaGithub,
     SiYoutube,
