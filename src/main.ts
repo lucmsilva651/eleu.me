@@ -20,6 +20,7 @@ import {
     SiGit,
     RiNpmjsFill,
     SiAssemblyscript,
+    BiFlower1,
     // social media
     FaGithub,
     SiYoutube,
@@ -55,6 +56,7 @@ addIcons(
     SiGit,
     RiNpmjsFill,
     SiAssemblyscript,
+    BiFlower1,
     // social media
     FaGithub,
     SiYoutube,

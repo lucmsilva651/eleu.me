@@ -54,6 +54,10 @@ import HomeItem from './HomeItem.vue'
     <a href="https://nodejs.org/" target="_blank" rel="noopener">
       <v-icon name="fa-node" /> Node.js
     </a>
+
+    <a href="https://www.mediawiki.org/wiki/MediaWiki" target="_blank" rel="noopener">
+      <v-icon name="bi-flower1" /> MediaWiki
+    </a>
     
     <a href="https://en.wikipedia.org/wiki/Assembly_language" target="_blank" rel="noopener">
       <v-icon name="si-assemblyscript" /> Assembly (x86)
