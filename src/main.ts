@@ -5,7 +5,7 @@ import App from './App.vue'
 import router from './router'
 
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { ViFileTypeGamemaker2 } from "oh-vue-icons/icons";
+import { ViFileTypeLightGamemaker2 , SiMicrosoftexcel } from "oh-vue-icons/icons";
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -16,7 +16,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 
 library.add(fas, far, fab)
 
-addIcons(ViFileTypeGamemaker2)
+addIcons(ViFileTypeLightGamemaker2, SiMicrosoftexcel)
 
 const app = createApp(App)
 

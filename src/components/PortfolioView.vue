@@ -57,11 +57,11 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     </a>
     
     <a href="https://gamemaker.io/" target="_blank" rel="noopener">
-      <v-icon name="vi-file-type-gamemaker2" /> GameMaker
+      <v-icon name="vi-file-type-light-gamemaker2" /> GameMaker
     </a>
 
     <a href="http://microsoft.com/microsoft-365/excel" target="_blank" rel="noopener">
-      <font-awesome-icon icon="fa-brands fa-excel" /> Excel
+      <v-icon name="si-microsoftexcel" /> Excel
     </a>
 
     <a href="https://gdevelop.io" target="_blank" rel="noopener">
