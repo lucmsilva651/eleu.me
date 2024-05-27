@@ -16,7 +16,7 @@ import {
     FaNode,
     ViFileTypeLightGamemaker2,
     RiFileExcel2Fill,
-    FaGg,
+    FaBlogger,
     SiGit,
     RiNpmjsFill,
     // social media
@@ -50,7 +50,7 @@ addIcons(
     FaNode,
     ViFileTypeLightGamemaker2,
     RiFileExcel2Fill,
-    FaGg,
+    FaBlogger,
     SiGit,
     RiNpmjsFill,
     // social media

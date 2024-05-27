@@ -63,8 +63,8 @@ import HomeItem from './HomeItem.vue'
       <v-icon name="ri-file-excel-2-fill" /> Excel
     </a>
 
-    <a href="https://gdevelop.io" target="_blank" rel="noopener">
-      <v-icon name="fa-gg" /> GDevelop
+    <a href="https://blogger.com" target="_blank" rel="noopener">
+      <v-icon name="fa-blogger" /> Blogger
     </a>
     
     <a href="https://git-scm.com/" target="_blank" rel="noopener">
