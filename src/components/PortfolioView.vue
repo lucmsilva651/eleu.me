@@ -57,7 +57,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     </a>
     
     <a href="https://nasm.us/" target="_blank" rel="noopener">
-      <img src="https://iconduck.com/vectors/vctrxghvjgj4/media/svg/download" width="24"> NASM
+      <div style="width:24px">
+        <div class="nasm-svg">
+      </div> NASM
     </a>
     
     <a href="https://gamemaker.io/" target="_blank" rel="noopener">
@@ -139,5 +141,18 @@ a {
   display: inline-block;
   margin-right: 3px;
   margin-top: -3px;
+}
+
+.nasm-svg {
+  width: 100%;
+  background-image: url(https://www.eleu.me/nasm.svg);
+  background-size: cover;
+  height: 0;
+  padding: 0; /* reset */
+  padding-bottom: 92%;
+}
+
+figure > div {
+  margin: 1em auto;
 }
 </style>
