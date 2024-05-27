@@ -57,7 +57,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     </a>
     
     <a href="https://nasm.us/" target="_blank" rel="noopener">
-      <font-awesome-icon icon="fa-brands fa-nasm" /> NASM
+      <img src="https://iconduck.com/vectors/vctrxghvjgj4/media/svg/download" width="24"> NASM
     </a>
     
     <a href="https://gamemaker.io/" target="_blank" rel="noopener">
