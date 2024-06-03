@@ -28,7 +28,7 @@ const changeLanguage = () => {
         <a href="https://github.com/lucmsilva651/eleu.me" target="_blank" rel="noopener">
           <v-icon name="fa-github" /> GitHub
         </a>
-        <a @click="changeLanguage()">{{ t('change-language') }}</a>
+        <a style="cursor: pointer; user-select: none;" @click="changeLanguage()">{{ t('change-language') }}</a>
       </nav>
 
       <div>
