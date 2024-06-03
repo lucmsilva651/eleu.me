@@ -25,7 +25,9 @@ const changeLanguage = () => {
       <nav>
         <RouterLink to="/">{{ t('home') }}</RouterLink>
         <RouterLink to="/about">{{ t('about') }}</RouterLink>
-        <a href="https://github.com/lucmsilva651/eleu.me" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/lucmsilva651/eleu.me" target="_blank" rel="noopener">
+          <v-icon name="fa-github" /> GitHub
+        </a>
         <a @click="changeLanguage()">{{ t('change-language') }}</a>
       </nav>
 
