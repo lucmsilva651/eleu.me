@@ -40,7 +40,8 @@ import {
     FaToolbox,
     RiMessageFill,
     FaHeart,
-    FaSmile
+    FaSmile,
+    FaSadCry
 } from "oh-vue-icons/icons"
 
 addIcons(
@@ -77,7 +78,8 @@ addIcons(
     FaToolbox,
     RiMessageFill,
     FaHeart,
-    FaSmile
+    FaSmile,
+    FaSadCry
 )
 
 const app = createApp(App)

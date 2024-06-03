@@ -1,19 +1,24 @@
 <script setup lang="ts">
-import HomeItem from '../components/HomeItem.vue'
+import HomeItem from '../components/HomeItem.vue';
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 
 <template>
   <div class="notfound">
     <HomeItem>
       <template #icon>
-        <font-awesome-icon icon="fa-solid fa-face-tired" />
+        <v-icon name="fa-sad-cry" />
       </template>
-      <template #heading>404 Not Found</template>
+      <template #heading>
+        <div>
+          {{ t('404-not-found') }}
+        </div>
+      </template>
       
-      Whoops, it seems that this page was not found!
-      
-      You can try:
-      <RouterLink to="/">Go to Home</RouterLink>
+      {{ t('404-not-found-desc') }}
+      <br>
+      <RouterLink to="/">{{ t('go-to-home') }}</RouterLink>
     </HomeItem>
   </div>
 </template>

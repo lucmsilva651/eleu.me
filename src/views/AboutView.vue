@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import HomeItem from '../components/HomeItem.vue'
+import HomeItem from '../components/HomeItem.vue';
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 
 <template>
@@ -8,27 +10,31 @@ import HomeItem from '../components/HomeItem.vue'
       <template #icon>
         <v-icon name="fa-smile" />
       </template>
-      <template #heading>About this website</template>
+      <template #heading>
+        <div>
+          {{ t('about2') }}
+        </div>
+      </template>
 
-      This website is made with
+      {{ t('made-with') }}
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
       <br>
-      Hosted on
+      {{ t('hosted-on') }}
       <a href="https://www.vercel.com/" target="_blank" rel="noopener">Vercel</a>.
       <br>
-      Icons by
+      {{ t('icons-by') }}
       <a href="https://oh-vue-icons.js.org/" target="_blank" rel="noopener">Oh, Vue Icons!</a>.
       <br>
-      Profile picture by
+      {{ t('pfp-credits') }}
       <a href="https://gleicecomms.carrd.co/" target="_blank" rel="noopener">Gleicinha Arts</a>.
       <br>
-      DDoS protection, mailing, security and optimization by
+      {{ t('cloudflare') }}
       <a href="https://www.cloudflare.com" target="_blank" rel="noopener">Cloudflare</a>.
       <br>
-      *.evs.net.br domain by
+      {{ t('freedns-domain') }}
       <a href="https://freedns.afraid.org" target="_blank" rel="noopener">FreeDNS</a>.
       <br>
-      Fonts by
+      {{ t('fonts-by') }}
       <a href="https://fonts.google.com" target="_blank" rel="noopener">Google Fonts</a>.
     </HomeItem>
   </div>

@@ -11,5 +11,16 @@
   "what-do-i-know": "What do I know how to work with?",
   "my-social-media": "My social media",
   "support-me": "Support me!",
-  "support-me-desc": "Rate my work and "
+  "support-me-desc": "Rate my work and ",
+  "about2": "About this website",
+  "made-with": "This website is made with",
+  "hosted-on": "Hosted on",
+  "icons-by": "Icons by",
+  "pfp-credits": "Profile picture by",
+  "cloudflare": "DDoS protection, mailing, security and optimization by",
+  "freedns-domain": "*.evs.net.br domain by",
+  "fonts-by": "Fonts by",
+  "404-not-found": "404: Not Found",
+  "404-not-found-desc": "Whoops, it seems that this page (or file) was not found!",
+  "go-to-home": "Go to Home"
 }
