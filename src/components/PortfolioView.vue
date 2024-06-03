@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import HomeItem from './HomeItem.vue'
+import HomeItem from './HomeItem.vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 </script>
 
 <template>
@@ -7,34 +10,44 @@ import HomeItem from './HomeItem.vue'
     <template #icon>
       <v-icon name="ri-book-mark-fill" />
     </template>
-    <template #heading>Who am I?</template>
-
-    I'm Brazilian, I'm 14 years old and I'm always curious about new things to explore in the world of programming.
+    <template #heading>
+      <div>
+        {{ t('who-am-i') }}
+      </div>
+    </template>
+    {{ t('who-am-i-desc') }}
   </HomeItem>
 
   <HomeItem>
     <template #icon>
       <v-icon name="fa-cube" />
     </template>
-    <template #heading>What do I do?</template>
-
-    I create websites, scripts, compilations and a few other things.
+    <template #heading>
+      <div>
+        {{ t('what-do-i-do') }}
+      </div>
+    </template>
+    {{ t('what-do-i-do-desc') }}
   </HomeItem>
 
   <HomeItem>
     <template #icon>
       <v-icon name="fa-toolbox" />
     </template>
-    <template #heading>What do I know how to work with?</template>
+    <template #heading>
+      <div>
+        {{ t('what-do-i-know') }}
+      </div>
+    </template>
 
     <a href="https://vuejs.org/" target="_blank" rel="noopener">
       <v-icon name="fa-vuejs" /> Vue
     </a>
-    
+
     <a href="https://www.w3.org/html/" target="_blank" rel="noopener">
       <v-icon name="co-html5-shield" /> HTML
     </a>
-    
+
     <a href="https://www.w3.org/css/" target="_blank" rel="noopener">
       <v-icon name="co-css3-shiled" /> CSS
     </a>
@@ -44,9 +57,9 @@ import HomeItem from './HomeItem.vue'
     </a>
 
     <a href="https://www.python.org/" target="_blank" rel="noopener">
-      <v-icon name="la-python" />  Python
+      <v-icon name="la-python" /> Python
     </a>
-    
+
     <a href="https://wikipedia.org/wiki/Batch_file" target="_blank" rel="noopener">
       <v-icon name="hi-solid-terminal" /> Batchfile
     </a>
@@ -66,7 +79,7 @@ import HomeItem from './HomeItem.vue'
     <a href="https://www.mediawiki.org/wiki/MediaWiki" target="_blank" rel="noopener">
       <v-icon name="bi-flower1" /> MediaWiki
     </a>
-    
+
     <a href="https://en.wikipedia.org/wiki/Assembly_language" target="_blank" rel="noopener">
       <v-icon name="si-assemblyscript" /> Assembly (x86)
     </a>
@@ -82,7 +95,7 @@ import HomeItem from './HomeItem.vue'
     <a href="https://blogger.com" target="_blank" rel="noopener">
       <v-icon name="fa-blogger" /> Blogger
     </a>
-    
+
     <a href="https://git-scm.com/" target="_blank" rel="noopener">
       <v-icon name="si-git" /> Git
     </a>
@@ -96,7 +109,11 @@ import HomeItem from './HomeItem.vue'
     <template #icon>
       <v-icon name="ri-message-fill" />
     </template>
-    <template #heading>My social media</template>
+    <template #heading>
+      <div>
+        {{ t('my-social-media') }}
+      </div>
+    </template>
 
     <a href="https://github.com/lucmsilva651/" target="_blank" rel="noopener">
       <v-icon name="fa-github" /> GitHub
@@ -139,9 +156,13 @@ import HomeItem from './HomeItem.vue'
     <template #icon>
       <v-icon name="fa-heart" />
     </template>
-    <template #heading>Support me!</template>
-    
-    Rate my work and
+    <template #heading>
+      <div>
+        {{ t('support-me') }}
+      </div>
+    </template>
+
+    {{ t('support-me-desc') }}
     <a href="https://buymeacoffee.com/lucmsilva" target="_blank" rel="noopener">
       <v-icon name="si-buymeacoffee" /> Buy Me a Coffee
     </a>

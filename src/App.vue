@@ -1,22 +1,36 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t, locale } = useI18n();
+const languages = ['en', 'pt'];
+const currentLanguageIndex = ref(0);
+
+const changeLanguage = () => {
+  currentLanguageIndex.value = (currentLanguageIndex.value + 1) % languages.length;
+  locale.value = languages[currentLanguageIndex.value];
+};
 </script>
 
 <template>
   <header>
-    <img alt="GitHub Profile Picture" class="logo" src="https://avatars.githubusercontent.com/u/90426410" width="125" height="125" />
+    <img alt="GitHub Profile Picture" class="logo" src="https://avatars.githubusercontent.com/u/90426410" width="125"
+      height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="Welcome!" />
+      <HelloWorld />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <a href="https://github.com/lucmsilva651/eleu.me" target="_blank" rel="noopener">
-          <v-icon name="fa-github" /> Source
-        </a>
+        <RouterLink to="/">{{ t('home') }}</RouterLink>
+        <RouterLink to="/about">{{ t('about') }}</RouterLink>
+        <a href="https://github.com/lucmsilva651/eleu.me" target="_blank" rel="noopener">GitHub</a>
+        <a @click="changeLanguage()">{{ t('change-language') }}</a>
       </nav>
+
+      <div>
+      </div>
     </div>
   </header>
 

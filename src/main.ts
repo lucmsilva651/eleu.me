@@ -3,8 +3,9 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import i18n from './i18n'
 
-import { OhVueIcon, addIcons } from "oh-vue-icons";
+import { OhVueIcon, addIcons } from "oh-vue-icons"
 import {
     // main icons
     FaVuejs,
@@ -40,7 +41,7 @@ import {
     RiMessageFill,
     FaHeart,
     FaSmile
-} from "oh-vue-icons/icons";
+} from "oh-vue-icons/icons"
 
 addIcons(
     // main icons
@@ -83,4 +84,5 @@ const app = createApp(App)
 
 app.component('v-icon', OhVueIcon)
 app.use(router)
+app.use(i18n)
 app.mount('#app')

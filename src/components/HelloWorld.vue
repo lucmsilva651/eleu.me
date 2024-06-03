@@ -1,15 +1,13 @@
 <script setup lang="ts">
-defineProps<{
-  msg: string
-}>()
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 </script>
 
 <template>
   <div class="greetings">
-    <h1 class="solid">{{ msg }}</h1>
-    <h3>
-      Hello! I am Lucas (aka. lucmsilva/eleu), and this is my website.
-    </h3>
+    <h1 class="solid">{{ t('welcome') }}</h1>
+    <h3>{{ t('introduction') }}</h3>
   </div>
 </template>
 
