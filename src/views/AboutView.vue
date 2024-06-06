@@ -17,25 +17,25 @@ const { t } = useI18n();
       </template>
 
       {{ t('made-with') }}
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
+      <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue 3</a>.
       <br>
       {{ t('hosted-on') }}
-      <a href="https://www.vercel.com/" target="_blank" rel="noopener">Vercel</a>.
+      <a href="https://www.vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a>.
       <br>
       {{ t('icons-by') }}
-      <a href="https://oh-vue-icons.js.org/" target="_blank" rel="noopener">Oh, Vue Icons!</a>.
+      <a href="https://oh-vue-icons.js.org/" target="_blank" rel="noopener noreferrer">Oh, Vue Icons!</a>.
       <br>
       {{ t('pfp-credits') }}
-      <a href="https://gleicecomms.carrd.co/" target="_blank" rel="noopener">Gleicinha Arts</a>.
+      <a href="https://gleicecomms.carrd.co/" target="_blank" rel="noopener noreferrer">Gleicinha Arts</a>.
       <br>
       {{ t('cloudflare') }}
-      <a href="https://www.cloudflare.com" target="_blank" rel="noopener">Cloudflare</a>.
+      <a href="https://www.cloudflare.com" target="_blank" rel="noopener noreferrer">Cloudflare</a>.
       <br>
       {{ t('freedns-domain') }}
-      <a href="https://freedns.afraid.org" target="_blank" rel="noopener">FreeDNS</a>.
+      <a href="https://freedns.afraid.org" target="_blank" rel="noopener noreferrer">FreeDNS</a>.
       <br>
       {{ t('fonts-by') }}
-      <a href="https://fonts.google.com" target="_blank" rel="noopener">Google Fonts</a>.
+      <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer">Google Fonts</a>.
     </HomeItem>
   </div>
 </template>
