@@ -9,7 +9,7 @@ const messages = {
 
 const i18n = createI18n({
   legacy: false,
-  locale: 'pt',
+  locale: navigator.language.split('-')[0] || 'en',
   fallbackLocale: 'en',
   messages,
 });

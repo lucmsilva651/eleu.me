@@ -3,12 +3,14 @@ import { useI18n } from 'vue-i18n';
 import { defineProps, defineEmits } from 'vue';
 
 const { t } = useI18n();
-const props = defineProps({
+
+defineProps({
   visible: {
     type: Boolean,
     required: true
   }
 });
+
 const emit = defineEmits(['close']);
 
 function closePopup() {
@@ -16,8 +18,8 @@ function closePopup() {
 }
 
 function copyText() {
-  const chavepix = `00020101021126810014br.gov.bcb.pix01368d6a266f-59e5-4084-be71-ee134b21e6de0219PIX DOACAO VIA SITE5204000053039865802BR5918LUCAS G M DA SILVA6007PIQUETE62070503***6304AB6D`;
-  navigator.clipboard.writeText(chavepix)
+  const pix = `00020101021126810014br.gov.bcb.pix01368d6a266f-59e5-4084-be71-ee134b21e6de0219PIX DOACAO VIA SITE5204000053039865802BR5918LUCAS G M DA SILVA6007PIQUETE62070503***6304AB6D`;
+  navigator.clipboard.writeText(pix)
     .then(() => {
       alert(t('pix-alert'));
     })
@@ -33,7 +35,7 @@ function copyText() {
       <h1 class="popup-title">{{ t('pix-dialog') }}</h1>
       <p class="popup-desc">{{ t('pix-desc') }}</p>
       <br>
-      <img src="/qrpix.png" width="300px" alt="QRCode Pix" class="popup-image">
+      <img src="/qrpix.png" width="275px" alt="QRCode Pix" class="popup-image">
       <div class="popup-buttons">
         <button @click="closePopup">{{ t('close') }}</button>
         <button @click="copyText">{{ t('copy-clipboard') }}</button>
@@ -49,7 +51,7 @@ function copyText() {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--overlay-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,6 +79,7 @@ function copyText() {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 .popup-buttons {

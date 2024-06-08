@@ -10,6 +10,7 @@
   --dark-exclusive-bg: #24242E;
   
   --box-shadow: #0000004d;
+  --overlay-bg: #00000080;
   --font-family: "Manrope", sans-serif;
   --button-text: var(--vt-c-white);
   --button-color: var(--vt-c-text-light-1);
