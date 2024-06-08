@@ -77,6 +77,11 @@ function copyText() {
 
 .popup-image {
   max-width: 100%;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   height: auto;
   margin-bottom: 20px;
   border-radius: 8px;
