@@ -1,4 +1,3 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
@@ -9,6 +8,11 @@
   --vt-c-black-mute: #282828;
 
   --dark-exclusive-bg: #24242E;
+  
+  --box-shadow: #0000004d;
+  --font-family: "Manrope", sans-serif;
+  --button-text: var(--vt-c-white);
+  --button-color: var(--vt-c-text-light-1);
 
   --vt-c-indigo: #2c3e50;
 
@@ -21,9 +25,10 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --section-gap: 160px;
 }
 
-/* semantic color variables for this project */
 :root {
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
@@ -34,8 +39,6 @@
 
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1);
-
-  --section-gap: 160px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,7 +56,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  img {
+  .logo {
     border-radius: 50%;
   }
 }
@@ -74,7 +77,7 @@ body {
     color 0.5s,
     background-color 0.5s;
   line-height: 1.6;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-family);
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

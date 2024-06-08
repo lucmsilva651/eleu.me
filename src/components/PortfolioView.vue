@@ -2,6 +2,15 @@
 import HomeItem from './HomeItem.vue';
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
+import { ref } from 'vue';
+import PopupMenu from './DonationPopup.vue';
+const isPopupVisible = ref(false);
+function showPopup() {
+  isPopupVisible.value = true;
+}
+function hidePopup() {
+  isPopupVisible.value = false;
+}
 </script>
 
 <template>
@@ -169,7 +178,11 @@ const { t } = useI18n();
     <a href="https://buymeacoffee.com/lucmsilva" target="_blank" rel="noopener noreferrer">
       <v-icon name="si-buymeacoffee" /> Buy Me a Coffee
     </a>
-    !
+    .
+    <div @click="hidePopup">
+      <a style="cursor: pointer; user-select: none;" @click.stop="showPopup">{{ t('pix') }}</a>
+      <PopupMenu :visible="isPopupVisible" @close="hidePopup" />
+    </div>
   </HomeItem>
 </template>
 

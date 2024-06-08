@@ -22,5 +22,12 @@
   "fonts-by": "Fontes por",
   "404-not-found": "404: Não Encontrado",
   "404-not-found-desc": "Opa, parece que essa página (ou arquivo) não foi encontrada!",
-  "go-to-home": "Ir para a Página Inicial"
+  "go-to-home": "Ir para a Página Inicial",
+  "close": "Fechar",
+  "copy-clipboard": "Copiar chave Pix",
+  "pix": "Você também pode doar via Pix!",
+  "pix-dialog": "Doação via Pix",
+  "pix-desc": "Escaneie esse QR Code no seu aplicativo de banco para fazer o Pix (ou copie a chave com o botão abaixo)",
+  "pix-alert": "Chave Pix copiada para a área de transferência com sucesso!\nAbra seu aplicativo do banco e cole a chave lá para fazer a doação.",
+  "pix-err": "Erro ao copiar chave Pix:"
 }

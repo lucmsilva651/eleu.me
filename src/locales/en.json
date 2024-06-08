@@ -22,5 +22,12 @@
   "fonts-by": "Fonts by",
   "404-not-found": "404: Not Found",
   "404-not-found-desc": "Whoops, it seems that this page (or file) was not found!",
-  "go-to-home": "Go to Home"
+  "go-to-home": "Go to Home",
+  "close": "Close",
+  "copy-clipboard": "Copy Pix key",
+  "pix": "You can also donate via Pix!",
+  "pix-dialog": "Donation via Pix (Brazil)",
+  "pix-desc": "Scan this QR Code in your bank app to make the Pix payment (or copy the key using the button below)",
+  "pix-alert": "Pix key copied to clipboard successfully!\nOpen your bank app and paste the key there to make the donation.",
+  "pix-err": "Error copying Pix key:"
 }
