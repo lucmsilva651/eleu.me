@@ -26,6 +26,9 @@
           <option value="ko">한국어</option>
           <option value="jp">日本語</option>
           <option value="zh">中文</option>
+          <option value="ar">العربية</option>
+          <option value="hi">हिन्दी</option>
+          <option value="vi">Tiếng Việt</option>
         </select>
       </nav>
 

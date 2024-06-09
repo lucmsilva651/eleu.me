@@ -11,12 +11,16 @@ import it from '../locales/it.json';
 import nl from '../locales/nl.json';
 import sv from '../locales/sv.json';
 import ko from '../locales/ko.json';
+import ar from '../locales/ar.json';
+import hi from '../locales/vi.json';
+import vi from '../locales/hi.json';
 
 const messages = {
   en, pt, es,
   ru, jp, zh,
   de, fr, it,
-  nl, sv, ko
+  nl, sv, ko,
+  hi, vi, ar
 };
 
 const i18n = createI18n({
