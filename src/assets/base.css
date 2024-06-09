@@ -14,7 +14,7 @@
   --overlay-bg: #00000080;
   --font-family: "Manrope", sans-serif;
   --button-text: var(--vt-c-white);
-  --button-color: var(--vt-c-text-light-1);
+  --button-color: var(--dark-bright-bg);
 
   --vt-c-indigo: #2c3e50;
 
