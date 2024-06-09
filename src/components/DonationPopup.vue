@@ -35,7 +35,7 @@ function copyText() {
       <h1 class="popup-title">{{ t('pix-dialog') }}</h1>
       <p class="popup-desc">{{ t('pix-desc') }}</p>
       <br>
-      <img src="/qrpix.png" width="275px" alt="QRCode Pix" class="popup-image">
+      <img src="https://telegra.ph/file/7250a86d7f1eb36aec74f.jpg" width="275px" alt="QRCode Pix" class="popup-image">
       <div class="popup-buttons">
         <button @click="closePopup">{{ t('close') }}</button>
         <button @click="copyText">{{ t('copy-clipboard') }}</button>
