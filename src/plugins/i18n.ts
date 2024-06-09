@@ -12,8 +12,8 @@ import nl from '../locales/nl.json';
 import sv from '../locales/sv.json';
 import ko from '../locales/ko.json';
 import ar from '../locales/ar.json';
-import hi from '../locales/vi.json';
-import vi from '../locales/hi.json';
+import vi from '../locales/vi.json';
+import hi from '../locales/hi.json';
 
 const messages = {
   en, pt, es,
