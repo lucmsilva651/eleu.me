@@ -56,7 +56,6 @@ select {
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-family);
-  font-size: 16px;
   border-radius: 8px;
 }
 
