@@ -4,13 +4,19 @@ import pt from '../locales/pt.json';
 import es from '../locales/es.json';
 import ru from '../locales/ru.json';
 import jp from '../locales/jp.json';
+import zh from '../locales/zh.json';
+import de from '../locales/de.json';
+import fr from '../locales/fr.json';
+import it from '../locales/it.json';
+import nl from '../locales/nl.json';
+import sv from '../locales/sv.json';
+import ko from '../locales/ko.json';
 
 const messages = {
-  en,
-  pt,
-  es,
-  ru,
-  jp
+  en, pt, es,
+  ru, jp, zh,
+  de, fr, it,
+  nl, sv, ko
 };
 
 const i18n = createI18n({
