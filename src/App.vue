@@ -14,9 +14,8 @@
         </a>
 
         <select id="lang" @change="selectLanguage($event)">
-          <option value="">Language</option>
           <option value="en">English</option>
-          <option value="pt">Português</option>
+          <option value="pt" selected>Português</option>
           <option value="es">Español</option>
           <option value="ru">Русский</option>
           <option value="jp">日本語</option>
@@ -52,9 +51,17 @@ function selectLanguage(event: Event): void {
 
 <style scoped>
 select {
-  padding: 10px;
+  padding: 2.5px;
+  user-select: none;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family);
   font-size: 16px;
-  margin-top: 10px;
+  border-radius: 8px;
+}
+
+select:focus {
+  outline: none;
 }
 
 header {
