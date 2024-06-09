@@ -4,6 +4,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './plugins/router'
 import i18n from './plugins/i18n'
+import VueNextSelect from 'vue-next-select'
 
 import { OhVueIcon, addIcons } from "oh-vue-icons"
 import {
@@ -87,6 +88,7 @@ addIcons(
 const app = createApp(App)
 
 app.component('v-icon', OhVueIcon)
+app.component('vue-select', VueNextSelect)
 app.use(router)
 app.use(i18n)
 app.mount('#app')

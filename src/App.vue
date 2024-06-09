@@ -1,19 +1,3 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-import { ref } from 'vue';
-import { useI18n } from 'vue-i18n';
-
-const { t, locale } = useI18n();
-const languages = ['en', 'pt'];
-const currentLanguageIndex = ref(0);
-
-const changeLanguage = () => {
-  currentLanguageIndex.value = (currentLanguageIndex.value + 1) % languages.length;
-  locale.value = languages[currentLanguageIndex.value];
-};
-</script>
-
 <template>
   <header>
     <img alt="GitHub Profile Picture" class="logo" src="https://avatars.githubusercontent.com/u/90426410" width="125"
@@ -28,7 +12,15 @@ const changeLanguage = () => {
         <a href="https://github.com/lucmsilva651/eleu.me" target="_blank" rel="noopener noreferrer">
           <v-icon name="fa-github" /> GitHub
         </a>
-        <a style="cursor: pointer; user-select: none;" @click="changeLanguage()">{{ t('change-language') }}</a>
+
+        <select id="lang" @change="selectLanguage($event)">
+          <option value="">Language</option>
+          <option value="en">English</option>
+          <option value="pt">Português</option>
+          <option value="es">Español</option>
+          <option value="ru">Русский</option>
+          <option value="jp">日本語</option>
+        </select>
       </nav>
 
       <div>
@@ -39,7 +31,32 @@ const changeLanguage = () => {
   <RouterView />
 </template>
 
+<script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router'
+import HelloWorld from './components/HelloWorld.vue'
+
+import { useI18n } from 'vue-i18n';
+const { t, locale } = useI18n();
+
+function changeLanguage(lang: string): void {
+  locale.value = lang;
+}
+
+function selectLanguage(event: Event): void {
+  const target = event.target as HTMLSelectElement;
+  if (target && target.value) {
+    changeLanguage(target.value);
+  }
+}
+</script>
+
 <style scoped>
+select {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;
