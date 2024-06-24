@@ -15,20 +15,8 @@
 
         <select id="lang" @change="selectLanguage($event)">
           <option value="en">English</option>
-          <option value="pt" selected>Português</option>
           <option value="es">Español</option>
-          <option value="ru">Русский</option>
-          <option value="fr">Français</option>
-          <option value="de">Deutsch</option>
-          <option value="it">Italiano</option>
-          <option value="nl">Nederlands</option>
-          <option value="sv">Svenska</option>
-          <option value="ko">한국어</option>
-          <option value="jp">日本語</option>
-          <option value="zh">中文</option>
-          <option value="ar">العربية</option>
-          <option value="hi">हिन्दी</option>
-          <option value="vi">Tiếng Việt</option>
+          <option value="pt">Português</option>
         </select>
       </nav>
 
