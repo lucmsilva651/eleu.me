@@ -1,0 +1,149 @@
+:root {
+  --index-text-color: #000000;
+  --index-bg-color: #6a2592;
+  --block-bg-color: #ffffff;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: var(--block-bg-color);
+  color: var(--index-text-color);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: var(--index-text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+i {
+  font-size: 28px;
+  color: var(--index-text-color);
+}
+
+.header {
+  background-color: var(--block-bg-color);
+  padding-left: 20px;
+}
+
+.header_list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  gap: 20px;
+}
+
+.main_container {
+  width: 100vw;
+  height: 100vh;
+  background: var(--index-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 0 0 500px #000000e6 inset;
+}
+
+.gh_photo {
+  width: 201px;
+  border-radius: 50%;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  margin-right: 15px;
+}
+
+.block_container {
+  border-radius: 15px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  width: 350px;
+  height: fit-content; /* declaring 10px smaller than the photo */
+  background-color: var(--block-bg-color);
+}
+
+.whoami {
+  margin-top: -10px;
+  margin-bottom: 14px;
+}
+
+.pix_btn {
+  font-size: smaller;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.pix_btn:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nf_block_container {
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  width: 350px;
+  height: fit-content;
+  background-color: var(--block-bg-color);
+}
+
+.nf_heading_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 730px) {
+  .gh_photo {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .header_list {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: -20px;
+  }
+  
+  .main_container {
+    flex-direction: column;
+  }
+
+  .block_container {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--block-bg-color);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --index-text-color: #ffffff;
+    --index-bg-color: #6a2592;
+    --block-bg-color: #24242e;
+  }
+}
