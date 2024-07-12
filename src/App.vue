@@ -2,7 +2,6 @@
 import { useI18n } from 'vue-i18n';
 import { ref, watch } from 'vue';
 import { RouterView, RouterLink } from 'vue-router'
-
 const { locale } = useI18n();
 const currentLang = ref(locale.value);
 
@@ -25,18 +24,32 @@ watch(locale, (newLocale) => {
 
     <div class="wrapper">
       <div class="link_row">
-        <RouterLink to="/">{{ $t('home') }}</RouterLink>
-        <RouterLink to="/about">{{ $t('about') }}</RouterLink>
-        <a href="https://avatars.githubusercontent.com/u/90426410">GitHub</a>
+        <RouterLink to="/">
+          <button>
+            {{ $t('home') }}
+          </button>
+        </RouterLink>
+
+        <a href="https://bio.eleu.me" target="_blank" rel="noopener noreferrer">
+          <button>
+            {{ $t('about') }}
+          </button>
+        </a>
+
+        <a href="https://github.com/lucmsilva651/eleu.me/tree/new-vue" target="_blank" rel="noopener noreferrer">
+          <button>
+            <v-icon name="ri-github-line" scale="0.8" />
+            GitHub
+          </button>
+        </a>
       </div>
 
       <select name="lang" v-model="currentLang">
         <option value="en">English</option>
-        <option value="es">Español</option>
         <option value="pt">Português</option>
       </select>
     </div>
-    
+
     <RouterView />
   </div>
 </template>
@@ -47,6 +60,7 @@ watch(locale, (newLocale) => {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  padding: 0 0 20px 0;
 }
 
 .link_row {
@@ -54,9 +68,8 @@ watch(locale, (newLocale) => {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 10px;
-  padding: 0.5em 1em;
-  font-weight: 500;
+  gap: 5px;
+  padding: 0 5px 0 0;
 }
 
 .link_row a {

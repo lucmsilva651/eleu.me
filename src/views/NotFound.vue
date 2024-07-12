@@ -1,14 +1,16 @@
-<script setup>
-import { useI18n } from 'vue-i18n';
-</script>
-
 <template>
-  <p>Not found</p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+  <p>404 Not Found</p>
+  <p class="desc">{{ $t('404-not-found-desc') }}</p>
+
+  <RouterLink to="/">
+    <button>
+      {{ $t('go-to-home') }}
+    </button>
+  </RouterLink>
 </template>
 
 <style scoped>
-.read-the-docs {
-  color: #888;
+.desc {
+  font-size: small;
 }
 </style>
