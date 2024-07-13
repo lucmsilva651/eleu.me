@@ -1,6 +1,6 @@
 <script setup>
 import { useNavigatorLanguage, useClipboard } from '@vueuse/core'
-const { text, copy, copied, isSupported } = useClipboard({ pixKey })
+const { copy, copied } = useClipboard({ pixKey })
 const { language } = useNavigatorLanguage()
 
 const pixKey = "00020101021126810014br.gov.bcb.pix01368d6a266f-59e5-4084-be71-ee134b21e6de0219PIX DOACAO VIA SITE5204000053039865802BR5918LUCAS G M DA SILVA6007PIQUETE62070503***6304AB6D"

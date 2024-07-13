@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
+    "lightningcss": "^1.25.1",
     "vite": "^5.3.1"
   }
 }

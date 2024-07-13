@@ -22,8 +22,9 @@ addIcons(
   RiYoutubeLine
 );
 
-createApp(App)
-  .use(Router)
-  .use(i18n)
-  .component("v-icon", OhVueIcon)
-  .mount('#app');
+const app = createApp(App)
+
+app.use(Router)
+app.use(i18n)
+app.component("v-icon", OhVueIcon)
+app.mount('#app');
