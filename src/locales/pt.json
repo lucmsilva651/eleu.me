@@ -6,12 +6,5 @@
   "more": "Mais...",
   "my-social-media": "Redes sociais",
   "404-not-found-desc": "Parece que a página (ou o arquivo) que você tá procurando não está disponível ou nem existe.",
-  "go-to-home": "Ir para Início",
-  "close": "Fechar",
-  "copy-clipboard": "Copiar chave Pix",
-  "pix": "Você também pode doar via Pix!",
-  "pix-dialog": "Doação via Pix",
-  "pix-desc": "Escaneie este QR Code no seu app do banco para fazer a doação (ou copie a chave abaixo)",
-  "pix-alert": "Chave Pix copiada para a área de transferência!\nCole no seu app do banco para doar.",
-  "pix-err": "Erro ao copiar chave Pix:"
+  "go-to-home": "Ir para Início"
 }

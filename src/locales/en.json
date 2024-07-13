@@ -6,12 +6,5 @@
   "more": "More...",
   "my-social-media": "My social media",
   "404-not-found-desc": "It seems that the page (or file) that you want is not avaliable or don't even exist.",
-  "go-to-home": "Go to Home",
-  "close": "Close",
-  "copy-clipboard": "Copy Pix key",
-  "pix": "Donate via Pix too!",
-  "pix-dialog": "Donate via Pix (Brazil)",
-  "pix-desc": "If you're in Brazil (or have a Brazilian bank account), scan this QR Code in your bank app to donate (or copy the key using the button below)",
-  "pix-alert": "Pix key copied to clipboard!\nOpen your bank app and paste the key to donate.",
-  "pix-err": "Error copying Pix key:"
+  "go-to-home": "Go to Home"
 }

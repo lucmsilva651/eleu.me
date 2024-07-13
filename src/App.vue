@@ -46,6 +46,7 @@ watch(locale, (newLocale) => {
 
       <select name="lang" v-model="currentLang">
         <option value="en">English</option>
+        <option value="es">Español</option>
         <option value="pt">Português</option>
       </select>
     </div>
