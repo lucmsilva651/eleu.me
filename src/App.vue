@@ -55,7 +55,7 @@ watch(locale, (newLocale) => {
   </div>
 </template>
 
-<style scoped>
+<style>
 .wrapper {
   display: flex;
   justify-content: center;
@@ -73,8 +73,8 @@ watch(locale, (newLocale) => {
   padding: 0 5px 0 0;
 }
 
-.link_row a {
-  color: white;
+button, option, select {
+  color: #fff;
 }
 
 .logo {
@@ -88,4 +88,5 @@ watch(locale, (newLocale) => {
   transition: filter 300ms;
   border-radius: 50%;
 }
+
 </style>
