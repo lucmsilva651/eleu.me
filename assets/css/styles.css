@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+@font-face {
+  font-family: "SegoeUI-VF";
+  src: url("/assets/fonts/SegoeUI-VF.ttf");
+}
+
+body {
+  background-color: #15191b;
+  font-family: "SegoeUI-VF";
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+.dm-serif {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  background-color: #0071a3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  padding: 0px 50px; /* top/bottom | left/right */
+}
+
+header p {
+  padding: 0;
+  margin: 8px;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+#header-close {
+  cursor: pointer;
+}
+
+.toolbar {
+  padding: 30px 55px; /* top/bottom | left/right */
+  background-color: #15191b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolbar a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 36px;
+}
+
+.toolbar .fa-brands {
+  color: #445156;
+  font-size: 24px;
+}
+
+.toolbar a:hover,
+.toolbar .fa-brands:hover {
+  color: #059ad3;
+}
+
+.toolbar-icons { 
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.logotype {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-desc {
+  color: #bababa;
+  padding: 0;
+  margin: 0;
+}
+
+.below-toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.sections {
+  background-color: #0f1112;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 90px;
+  height: 52.5vh;
+  gap: 50px;
+  width: 20vw;
+}
+
+.sections p {
+  padding: 0;
+  margin: 0;
+}
+
+.sections span {
+  color: #445156;
+  display: flex;
+  font-size: larger;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.section-content {
+  background-color: #1d2224;
+  width: 70vw;
+  padding: 75px 160px;
+}
+
+.section-title {
+  color: #059ad3;
+  font-weight: 350;
+  font-size: 48px;
+  margin: 0px 0px 16px 0px;
+  padding: 0;
+}
+
+#content-box {
+  color: #818e93;
+  font-weight: 350;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
