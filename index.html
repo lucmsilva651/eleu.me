@@ -1,3 +1,11 @@
+<!-- 
+ _                  _ _          
+| |_  _ __ _ __  __(_) |_ ____ _ 
+| | || / _| '  \(_-< | \ V / _` |
+|_|\_,_\__|_|_|_/__/_|_|\_/\__,_|
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +15,7 @@
   <meta name="title" content="lucmsilva's Website">
   <meta name="description" content="This is just my website and my portfolio. Nothing too much important.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.eleu.me">
@@ -27,7 +36,7 @@
   <meta name="revisit-after" content="5 days">
   <meta name="author" content="Lucas Gabriel (lucmsilva)">
 
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js"
@@ -40,7 +49,7 @@
 
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'self'; 
-    script-src 'self' https://cdnjs.cloudflare.com; 
+    script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; 
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; 
     img-src 'self' https://avatars.githubusercontent.com data:; 
     font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; 
@@ -52,73 +61,79 @@
 </head>
 
 <body>
-  <header id="header">
-    <a href="https://github.com/lucmsilva651/eleu.me" target="_blank" rel="noopener norefferer">
-      <span class="material-icons">arrow_forward</span>
+  <div id="reminder">
+    <a class="reminder-left" href="https://github.com/lucmsilva651/eleu.me" target="_blank" rel="noopener norefferer">
+      <span class="material-icons reminder-arrow">arrow_forward</span>
       <p>Liking this new design? Give it a star on GitHub!</p>
     </a>
-    <span id="header-close" class="material-icons">close</span>
+    <span id="reminder-close" class="material-icons">close</span>
+  </div>
+
+  <header>
+    <div class="logotype">
+      <a id="logo" href="/"><b>lucmsilva</b></a>
+      <p class="logo-desc">Hello! I'm Lucas (aka. lucmsilva/eleu), and this is my website.</p>
+    </div>
+
+    <div class="toolbar-icons">
+      <a href="https://github.com/lucmsilva651" target="_blank" rel="noopener norefferer">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://youtube.com/lucmsilva651" target="_blank" rel="noopener norefferer">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="https://t.me/lukig1" target="_blank" rel="noopener norefferer">
+        <i class="fa-brands fa-telegram"></i>
+      </a>
+      <a href="https://twitter.com/lucmsilvagg" target="_blank" rel="noopener norefferer">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://last.fm/user/lucmsilva" target="_blank" rel="noopener norefferer">
+        <i class="fa-brands fa-lastfm"></i>
+      </a>
+    </div>
   </header>
 
   <div class="content">
-    <div class="toolbar">
-      <div class="logotype">
-        <a id="logo" href="/"><b>lucmsilva</b></a>
-        <p class="logo-desc">Hello! I'm Lucas (aka. lucmsilva/eleu), and this is my website.</p>
-      </div>
-
-      <div class="toolbar-icons">
-        <a href="https://github.com/lucmsilva651" target="_blank" rel="noopener norefferer">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://youtube.com/lucmsilva651" target="_blank" rel="noopener norefferer">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-        <a href="https://t.me/lukig1" target="_blank" rel="noopener norefferer">
-          <i class="fa-brands fa-telegram"></i>
-        </a>
-        <a href="https://twitter.com/lucmsilvagg" target="_blank" rel="noopener norefferer">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a href="https://last.fm/user/lucmsilva" target="_blank" rel="noopener norefferer">
-          <i class="fa-brands fa-lastfm"></i>
-        </a>
-      </div>
+    <div id="sections">
+      <span id="about-me" class="tab active">
+        <span class="material-icons section-icon" class="section-ico">account_circle</span>
+        About me
+      </span>
+      <span id="my-projects" class="tab">
+        <span class="material-icons section-icon" class="section-ico">code</span>
+        My projects
+      </span>
+      <span id="friends" class="tab">
+        <span class="material-icons section-icon" class="section-ico">favorite</span>
+        Friends
+      </span>
+      <span id="support-me" class="tab">
+        <span class="material-icons section-icon" class="section-ico">paid</span>
+        Support me
+      </span>
+      <span id="full-bio" class="tab">
+        <span class="material-icons section-icon" id="section-ico-5">info</span>
+        Full bio
+      </span>
     </div>
 
-    <div class="below-toolbar">
-      <div class="sections">
-        <span id="about-me" class="tab active">
-          <span class="material-icons section-icon" id="section-ico-1">account_circle</span>
-          About me
-        </span>
-        <span id="my-projects" class="tab">
-          <span class="material-icons section-icon" id="section-ico-2">code</span>
-          My projects
-        </span>
-        <span id="friends" class="tab">
-          <span class="material-icons section-icon" id="section-ico-3">favorite</span>
-          Friends
-        </span>
-        <span id="support-me" class="tab">
-          <span class="material-icons section-icon" id="section-ico-4">paid</span>
-          Support me
-        </span>
-        <span id="full-bio" class="tab">
-          <span class="material-icons section-icon" id="section-ico-5">info</span>
-          Full bio
-        </span>
-      </div>
-
-      <div class="section-content">
-        <p id="content-box">Loading content... Please wait. If this takes longer than expected, report this issue at my
+    <div class="section-content">
+      <span id="content-box">
+        <h1 class="section-title">Loading...</h1>
+        <p>Loading content... Please wait. If this takes longer than expected (~0.2 ms), open your browser's console,
+          capture the error and report it at my
           <a href="https://github.com/lucmsilva651/eleu.me/issues">GitHub repo</a>.
         </p>
-      </div>
+      </span>
     </div>
   </div>
 
-  <script src="/assets/javascript/script.js"></script>
+  <div class="footer">
+    Professionally Made by <b>lucmsilva</b>
+  </div>
+
+  <script src="/javascript/script.js"></script>
 </body>
 
 </html>
