@@ -5,13 +5,24 @@
 
 body {
   background-color: #15191b;
+  user-select: none;
   font-family: "SegoeUI-VF", sans-serif;
   color: #ffffff;
   padding: 0;
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #0071a3;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 header {
+  user-select: none;
   background-color: #0071a3;
   display: flex;
   align-items: center;
@@ -25,7 +36,7 @@ header p {
   margin: 8px;
 }
 
-header a {
+header a, header a:hover {
   text-decoration: none;
   color: inherit;
   display: flex;
@@ -87,8 +98,7 @@ header a {
   background-color: #0f1112;
   display: flex;
   flex-direction: column;
-  padding: 40px 90px;
-  height: 52.5vh;
+  padding: 60px 90px;
   gap: 50px;
   width: 20vw;
 }
@@ -99,6 +109,7 @@ header a {
 }
 
 .sections span {
+  user-select: none;
   color: #445156;
   display: flex;
   font-size: larger;
@@ -123,6 +134,7 @@ header a {
 }
 
 #content-box {
+  user-select: text;
   color: #818e93;
   font-weight: 350;
   margin: 0;
