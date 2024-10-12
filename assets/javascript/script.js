@@ -75,6 +75,16 @@ addHoverEffect(friendsBtn, mIcon3);
 addHoverEffect(bioBtn, mIcon4);
 addHoverEffect(supportBtn, mIcon5);
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+const randomValue = getRandomInt(100000000 + 1); // 100000000
+
+if (randomValue == 40028922) {
+  document.getElementById("logo").style.fontFamily = "Comic Sans MS";
+}
+
 window.onload = () => {
   activateTab('about-me', 'section-ico-1');
 };
