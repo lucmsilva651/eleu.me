@@ -37,7 +37,7 @@ export default function Home() {
       <div className="space-y-4">
         <h2 className="text-2xl font-bold">GitHub Stats</h2>
         {imageError ? (
-          <p>Sorry, we're unable to load GitHub stats at the moment.</p>
+          <p>Sorry, we&apos;re unable to load GitHub stats at the moment.</p>
         ) : (
           <div className="flex space-x-4">
             <Image
