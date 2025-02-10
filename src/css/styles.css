@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: sunset --default;
+}
+
+@font-face {
+  font-family: "VercelGeist";
+  src: url(../fonts/Geist-Regular.woff2) format("woff2");
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  font-family: "VercelGeist", sans-serif;
+  font-display: swap;
+}
