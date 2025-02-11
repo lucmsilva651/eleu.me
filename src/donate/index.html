@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
-  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="../assets/css/index.css">
   <meta name="title" content="lucmsilva's Website" />
   <link rel="shortcut icon" href="https://github.com/lucmsilva651.png">
   <meta name="description" content="My website." />
@@ -14,7 +14,7 @@
   <meta property="twitter:url" content="https://www.lucmsilva.com/" />
   <meta property="twitter:title" content="lucmsilva's Website" />
   <meta property="twitter:description" content="My website." />
-  <title>lucmsilva's Website</title>
+  <title>Donate | lucmsilva's Website</title>
 </head>
 <body class="font-display">
   <div class="navbar px-5 bg-base-200 shadow-sm">
@@ -32,7 +32,7 @@
           <li><a href="/donate">Donate</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost text-xl">lucmsilva</a>
+      <a class="btn btn-ghost text-xl" href="/">lucmsilva</a>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
@@ -47,13 +47,74 @@
     </div>
   </div>
   <div class="px-5 py-10">
-    <div class="text-center md:h-96 place-content-center text-sm md:text-lg">
-      <h1 class="text-5xl py-8 md:py-3">Welcome to my website!</h1>
-      <p class="text-lg">I'm Lucas, a 15 y.o. <span id="qualities"></span>and student from Brazil.</p>
+    <div class="text-center place-content-center text-sm md:text-lg">
+      <h1 class="text-5xl py-8 md:py-3">Donate to me</h1>
+      <p class="text-lg">You can donate to me via these platforms:</p>
       <br />
-      <p>I am also an enthusiast with experience in hardware, troubleshooting, software installation, and more.</p>
-      <br class="block md:hidden"/>
-      <p>Fun fact: I really enjoy tinkering with Android, and sometimes a large community follows my projects.</p>
+      <div class="collapse collapse-arrow text-left md:text-center bg-base-100 my-1 md:w-2xl place-self-center border border-base-200">
+        <input type="checkbox" />
+        <div class="collapse-title font-semibold">Pix (only on Brazil)</div>
+        <div class="collapse-content text-sm">
+          Email: <span class="font-mono">lucmsilva651&commat;gmail.com</span>
+          <br />
+          Random key: <span class="font-mono">8d6a266f-59e5-4084-be71-ee134b21e6de</span>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow text-left md:text-center bg-base-100 my-1 md:w-2xl place-self-center border border-base-200">
+        <input type="checkbox" />
+        <div class="collapse-title font-semibold">IBAN/SWIFT (USD)</div>
+        <div class="collapse-content text-sm">
+          <span class="font-mono">
+            Intermediary bank (Field 56):<br>
+            SWIFT: CHASUS33<br>
+            ABA: 021000021<br>
+            Account: 360556937<br>
+            JP Morgan Chase N.A.<br><br>
+            Destination bank (Field 57):<br>
+            SWIFT: ITEMBRSP<br>
+            Beneficiary bank: Banco Inter S.A.<br><br>
+            Beneficiary (Field 59):<br>
+            Beneficiary in Brazil: LUCAS GABRIEL MACHADO DA SILVA<br>
+            IBAN: BR7200416968000010345618602C1<br><br>
+            Additional information:<br>
+            JP Morgan address: 270 Park Avenue, New York, NY, 10017, United States<br>
+            Banco Inter address: 1219 Barbacena Ave, Belo Horizonte, MG, 30190-924, Brazil<br>
+          </span>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow text-left md:text-center bg-base-100 my-1 md:w-2xl place-self-center border border-base-200">
+        <input type="checkbox" />
+        <div class="collapse-title font-semibold">IBAN/SWIFT (EUR)</div>
+        <div class="collapse-content text-sm">
+          <span class="font-mono">
+            Intermediary bank (Field 56):<br>
+            SWIFT: CHASDEFX<br>
+            JP Morgan AG<br><br>
+            Destination bank (Field 57):<br>
+            SWIFT: ITEMBRSP<br>
+            Beneficiary bank: Banco Inter S.A.<br><br>
+            Beneficiary (Field 59):<br>
+            Beneficiary in Brazil: LUCAS GABRIEL MACHADO DA SILVA<br>
+            IBAN: BR7200416968000010345618602C1<br><br>
+            Additional information:<br>
+            Intermediary bank address: Taunustor 1, Frankfurt, Germany<br>
+            Banco Inter address: 1219 Barbacena Ave, Belo Horizonte, MG, 30190-924, Brazil<br><br>
+          </span>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow text-left md:text-center bg-base-100 my-1 md:w-2xl place-self-center border border-base-200">
+        <input type="checkbox" />
+        <div class="collapse-title font-semibold">Cryptocurrency</div>
+        <div class="collapse-content text-sm">
+          <span class="font-bold">
+            You should only send coins that are part of the Ethereum Mainnet
+            <br />
+            Sending any other coins may result in permanent loss
+          </span>
+          <br />
+          ETH, TON and USDT: <span class="font-mono">0xbfd30d120ddbab1e8e9d9a653a232b9940fb95ba</span>
+        </div>
+      </div>
     </div>
   </div>
   <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
@@ -287,30 +348,5 @@
       <a class="link link-hover" href="https://last.fm/user/lucmsilva">Last.fm profile</a>
     </nav>
   </footer>
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script>
-    var typed = new Typed('#qualities', {
-      strings: [
-        'music lover',
-        'coffee lover',
-        'cat lover',
-        'bad developer',
-        'dog lover',
-        'blogger',
-        'web developer',
-        'book lover',
-        'movie lover',
-        'gamer',
-        'series lover',
-        'software developer',
-      ],
-      typeSpeed: 100,
-      backSpeed: 20,
-      backDelay: 1000,
-      smartBackspace: true,
-      shuffle: true,
-      loop: true,
-    });
-  </script>
 </body>
 </html>
