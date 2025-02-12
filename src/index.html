@@ -17,6 +17,20 @@
   <title>lucmsilva's Website</title>
 </head>
 <body class="font-display">
+  <div id="topAlert" class="bg-[#0071a3] flex flex-row items-center justify-between text-sm px-5 lg:px-12 md:text-[18px] text-white">
+    <a href="https://github.com/lucmsilva651/portfolio-website" class="flex flex-row items-center" target="_blank" rel="noopener norefferer">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+      </svg>
+      <p class="m-2">Liking this new design? Give it a star on GitHub!</p>
+    </a>
+    <span id="topAlertClose" class="cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      </svg>      
+    </span>
+  </div>
+
   <div class="navbar px-5 bg-base-200 shadow-sm">
     <div class="navbar-start">
       <div class="dropdown">
@@ -312,6 +326,13 @@
       smartBackspace: true,
       shuffle: true,
       loop: true,
+    });
+
+    const topAlert = document.getElementById("topAlert");
+    const topAlertClose = document.getElementById("topAlertClose");
+
+    topAlertClose.addEventListener('click', function() {
+      topAlert.style.display = "none";
     });
   </script>
 </body>
