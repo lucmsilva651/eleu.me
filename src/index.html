@@ -329,11 +329,14 @@
       loop: true,
     });
 
-    const topAlert = document.getElementById("topAlert");
-    const topAlertClose = document.getElementById("topAlertClose");
+    document.addEventListener("DOMContentLoaded", () => {
+      if (localStorage.getItem("userClosedTopBar") == "true") {
+        document.getElementById("topAlert").style.display = "none";
+      }
+    });
 
-    topAlertClose.addEventListener('click', function() {
-      topAlert.style.display = "none";
+    document.getElementById("topAlertClose").addEventListener('click', () => {
+      localStorage.setItem("userClosedTopBar", "true");
     });
   </script>
 </body>
