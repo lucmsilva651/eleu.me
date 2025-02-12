@@ -17,6 +17,19 @@
   <title>lucmsilva's Website</title>
 </head>
 <body class="font-display">
+  <div id="topAlert" class="hidden bg-[#0071a3] flex-row items-center justify-between text-sm px-5 lg:px-12 md:text-[18px] text-white">
+    <a href="https://github.com/lucmsilva651/portfolio-website" class="flex flex-row items-center" target="_blank" rel="noopener norefferer">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+      </svg>
+      <p class="m-2">Liking this new design? Give it a star on GitHub!</p>
+    </a>
+    <span id="topAlertClose" class="cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
+      </svg>
+    </span>
+  </div>
   <div class="navbar px-5 bg-base-200 shadow-sm">
     <div class="navbar-start">
       <div class="dropdown">
@@ -284,5 +297,17 @@
       <a class="link link-hover" href="https://last.fm/user/lucmsilva">LastFM Profile</a>
     </nav>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (localStorage.getItem("userClosedTopBar") != "true") {
+        document.getElementById("topAlert").classList.replace("hidden", "flex");
+      }
+    });
+
+    document.getElementById("topAlertClose").addEventListener('click', () => {
+      localStorage.setItem("userClosedTopBar", "true");
+      topAlert.style.display = "none";
+    });
+  </script>
 </body>
 </html>
