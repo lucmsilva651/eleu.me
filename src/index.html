@@ -17,7 +17,7 @@
   <title>lucmsilva's Website</title>
 </head>
 <body class="font-display">
-  <div id="topAlert" class="bg-[#0071a3] flex flex-row items-center justify-between text-sm px-5 lg:px-12 md:text-[18px] text-white">
+  <div id="topAlert" class="hidden bg-[#0071a3] flex-row items-center justify-between text-sm px-5 lg:px-12 md:text-[18px] text-white">
     <a href="https://github.com/lucmsilva651/portfolio-website" class="flex flex-row items-center" target="_blank" rel="noopener norefferer">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
@@ -330,13 +330,14 @@
     });
 
     document.addEventListener("DOMContentLoaded", () => {
-      if (localStorage.getItem("userClosedTopBar") == "true") {
-        document.getElementById("topAlert").style.display = "none";
+      if (localStorage.getItem("userClosedTopBar") != "true") {
+        document.getElementById("topAlert").classList.replace("hidden", "flex");
       }
     });
 
     document.getElementById("topAlertClose").addEventListener('click', () => {
       localStorage.setItem("userClosedTopBar", "true");
+      topAlert.style.display = "none";
     });
   </script>
 </body>
