@@ -65,6 +65,7 @@
       <p class="text-lg">Hey! I think this isn't what you are wanting here.</p>
       <br />
       <p>You can <a href="/" class="link link-hover">go back to the home page</a> or even <a href="https://blog.lucmsilva.com" class="link link-hover">read my blog</a>.</p>
+      <p>Or you can watch to this <a id="randomLink" class="link link-hover">YouTube video</a>.</p>
     </div>
   </div>
   <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
@@ -312,6 +313,23 @@
       localStorage.setItem("userClosedTopBar", "true");
       topAlert.style.display = "none";
     });
+
+    const linkArray = [
+      "https://www.youtube.com/watch?v=a2I7DkYMqsE",
+      "https://www.youtube.com/watch?v=v1K4EAXe2oo",
+      "https://www.youtube.com/watch?v=J4ossube1m4",
+      "https://www.youtube.com/watch?v=5zCl8g5xflI",
+      "https://www.youtube.com/watch?v=VLWPTRvvDro",
+      "https://www.youtube.com/watch?v=itKhnqLoS-A",
+      "https://www.youtube.com/watch?v=pvMo5d27fbA",
+      "https://www.youtube.com/watch?v=ov86aOphmNs",
+      "https://www.youtube.com/watch?v=nFylN7vK14Q",
+      "https://www.youtube.com/watch?v=6aLA9soAQVU",
+      "https://www.youtube.com/watch?v=THqDXn-Wm_0",
+      "https://www.youtube.com/watch?v=fmI_Ndrxy14"
+    ]
+    var randomLink = Math.floor(Math.random() * linkArray.length);
+    document.getElementById("randomLink").href = linkArray[randomLink];
   </script>
 </body>
 </html>
