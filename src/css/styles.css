@@ -1,0 +1,16 @@
+@import "https://fonts.googleapis.com/css2?family=Geist";
+@import "https://fonts.googleapis.com/css2?family=Geist+Mono";
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: sunset --default;
+}
+
+@theme {
+  --font-display: "Geist", sans-serif;
+  --font-mono: "Geist Mono", sans-serif;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}

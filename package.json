@@ -2,7 +2,7 @@
   "name": "portfolio-website",
   "type": "module",
   "scripts": {
-    "build": "bunx @tailwindcss/cli -i ./src/assets/css/styles.css -o ./src/assets/css/index.css"
+    "build": "bunx @tailwindcss/cli -i ./src/css/styles.css -o ./src/css/index.css"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.0.6",
