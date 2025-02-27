@@ -2,7 +2,7 @@
 @import "https://fonts.googleapis.com/css2?family=Geist+Mono";
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: sunset --default;
+  themes: nord, sunset --default;
 }
 
 @theme {
