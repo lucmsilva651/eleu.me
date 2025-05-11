@@ -90,7 +90,7 @@
   <div class="px-5 py-10">
     <div class="text-center md:h-96 place-content-center text-sm md:text-lg">
       <h1 class="text-5xl py-8 md:py-3">Welcome to my website!</h1>
-      <p class="text-lg">I'm Lucas, a <script>document.write(getFullYear() - 2009)</script> y.o. <span id="qualities"></span> and student from Brazil.</p>
+      <p class="text-lg">I'm Lucas, a <span id="myAge">?</span> y.o. <span id="qualities"></span> and student from Brazil.</p>
       <br />
       <p>I am also an enthusiast with experience in hardware, troubleshooting, software installation, and more.</p>
       <br class="block md:hidden"/>
@@ -356,6 +356,22 @@
       loop: true,
     });
 
+    function calculateAge(birthDate) {
+      const today = new Date();
+      const birthDateObj = new Date(birthDate);
+    
+      let age = today.getFullYear() - birthDateObj.getFullYear();
+      const monthDiff = today.getMonth() - birthDateObj.getMonth();
+    
+      if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDateObj.getDate())) {
+        age--;
+      };
+    
+      return age;
+    };
+    
+    document.getElementById("myAge").textContent = calculateAge("2009-07-07");
+    
     document.addEventListener("DOMContentLoaded", () => {
       if (localStorage.getItem("userClosedTopBar") != "true") {
         document.getElementById("topAlert").classList.replace("hidden", "flex");
