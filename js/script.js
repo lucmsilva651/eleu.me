@@ -3,7 +3,7 @@ import ZeroMd from 'https://cdn.jsdelivr.net/npm/zero-md@3'
 const p = new URLSearchParams(location.search).get("p"), sE = e => document.getElementById(e);
 window.onload = () => { sE("mdLoad").src = `pages/${p || "home"}.md`; }
 
-export function initZeroMd() {
+function initZeroMd() {
   customElements.define('zero-md', class extends ZeroMd {
     async load() {
       await super.load()
@@ -11,3 +11,5 @@ export function initZeroMd() {
     }
   })
 }
+
+initZeroMd()
