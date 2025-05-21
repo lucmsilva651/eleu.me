@@ -1,6 +1,4 @@
 node_modules
 bun.lock*
 package-lock*.json
-*.min.*
-index.html
-!html/index.html
+public

@@ -1,22 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans");
-
 * {
   font-family: "IBM Plex Sans", sans-serif;
-  color: #ffffff;
-  transition: .2s;
+  color: #fff;
+  transition: .2s
 }
 
 .logo {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 2.5rem;
+  font-size: 2.5rem
 }
 
 body {
-  background-image: url("https://sadhost.neocities.org/images/tiles/sparklebackground.gif");
-  background-repeat: repeat;
+  background: url("https://sadhost.neocities.org/images/tiles/sparklebackground.gif") repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
 
 body,
@@ -26,19 +23,19 @@ header *,
 .content-right p,
 .content-left ul {
   padding: 0;
-  margin: 0;
+  margin: 0
 }
 
 .aspect-ratio-4x3 {
   background-color: #8c00ff50;
-  width: 990px;
+  width: 990px
 }
 
 header * {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  user-select: none
 }
 
 header {
@@ -47,19 +44,18 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #8c00ff80;
-  height: 75px;
+  height: 75px
 }
 
 main {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr
 }
 
 .content-left,
 .content-right {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0
 }
 
 .content-left {
@@ -68,59 +64,70 @@ main {
   gap: 20px;
   background-color: #8c00ff21;
   padding-left: 50px;
-  grid-area: 1 / 1 / 1 / 1;
+  grid-area: 1/1/1/1
 }
 
 .content-left p {
   font-size: 1.5rem;
-  font-weight: bold;
-  padding-bottom: 5px;
+  font-weight: 700;
+  padding-bottom: 5px
 }
 
 .content-left ul {
-  list-style: none;
+  list-style: none
 }
 
 .content-left ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff
 }
 
 .content-left ul li a:hover {
   color: #d6a4ff;
-  text-decoration: underline;
+  text-decoration: underline
 }
 
 .content-right {
-  padding-left: 40px;
-  padding-right: 50px;
-  grid-area: 1 / 2 / 1 / 6;
+  padding: 30px 50px 30px 40px;
+  grid-area: 1/2/1/6
 }
 
 footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  justify-content: space-between;
   padding: 10px 50px;
-  background-color: #8c00ff80;
+  background-color: #8c00ff80
 }
 
 footer img {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(70deg) brightness(99%) contrast(107%);
   width: 50px;
-  height: 50px;
+  height: 50px
 }
 
 footer p {
   padding: 0;
-  margin: 0;
+  margin: 0
 }
 
-footer p:first-child {
-  font-size: 0.9em;
+footer .left p:first-child {
+  font-size: .9em
 }
 
-footer p:not(:first-child) {
-  font-size: 1.3em;
+footer .left p:not(:first-child) {
+  font-size: 1.3em
+}
+
+footer .left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px
+}
+
+footer .right {
+  text-align: right;
+  font-size: .9em
 }
