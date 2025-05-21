@@ -1,11 +1,11 @@
 * {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #fff;
   transition: .2s
 }
 
 .logo {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: monospace;
   font-size: 2.5rem
 }
 
@@ -129,5 +129,5 @@ footer .left {
 
 footer .right {
   text-align: right;
-  font-size: .9em
+  font-size: .75em
 }
