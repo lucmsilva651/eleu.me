@@ -1,18 +1,17 @@
 {
   "scripts": {
-    "copy:md": "run-script-os",
-    "copy:md:windows": "xcopy /e /y /q /i pages public\\pages",
-    "copy:md:linux:darwin": "mkdir public && cp -r pages public/pages",
+    "copy:pages": "run-script-os",
+    "copy:pages:windows": "xcopy /e /y /q /i donate public\\donate && xcopy /e /y /q /i projects public\\projects",
+    "copy:pages:linux:darwin": "mkdir public && cp -r donate public/donate && cp -r projects public/projects",
     "minify:css": "cleancss -O2 -o ./public/css/styles.min.css ./css/styles.css",
     "minify:html": "html-minifier --input-dir html --output-dir ./public --file-ext html --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype --minify-js",
-    "build": "npm run copy:md && npm run minify:css && npm run minify:html",
+    "build": "npm run copy:pages && npm run minify:css && npm run minify:html",
     "dev": "npm run build && http-server -p 8080 -c-1 --proxy http://localhost:8080"
   },
   "dependencies": {
     "clean-css-cli": "^5.6.3",
     "html-minifier": "^4.0.0",
     "http-server": "^14.1.1",
-    "run-script-os": "^1.1.6",
-    "terser": "^5.37.0"
+    "run-script-os": "^1.1.6"
   }
 }
