@@ -1,2 +1,23 @@
 # portfolio-website
+
 My website.
+
+## Run a development server
+
+1. **Install node dependancies**
+
+   ```sh
+   npm install
+   ```
+
+1. **Copy any overlay files**
+
+   You can copy any custom files you want put in the final build directory, like a `favicon.ico`, into the `overlay/` directory, and they will be copied *after* the build.
+
+   You can also overlay into existing directories with this method. `overlay/` represents webroot.
+
+1. **Start server**
+
+   ```sh
+   npm run dev
+   ```
