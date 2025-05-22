@@ -3,7 +3,7 @@
     "copy:pages": "run-script-os",
     "create:public": "run-script-os",
     "create:public:windows": "mkdir public && mkdir public\\donate && mkdir public\\projects",
-    "create:public:linux:darwin": "mkdir public && mkdir public/donate && mkdir public/projects",
+    "create:public:linux:darwin": "mkdir -p public && mkdir -p public/donate && mkdir -p public/projects",
     "copy:pages:windows": "copy /y html\\donate.html public\\donate\\index.html && copy /y html\\projects.html public\\projects\\index.html",
     "copy:pages:linux:darwin": "cp -r html/donate.html public/donate/index.html && cp -r html/projects.html public/projects/index.html",
     "cleanup:html": "run-script-os",
