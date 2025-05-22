@@ -25,7 +25,7 @@ header *,
   margin: 0
 }
 
-.aspect-ratio-4x3 {
+.content-box {
   background-color: #8c00ff50;
   width: 990px
 }
