@@ -1,8 +1,11 @@
 {
   "scripts": {
     "copy:pages": "run-script-os",
-    "copy:pages:windows": "xcopy /e /y /q /i donate public\\donate && xcopy /e /y /q /i projects public\\projects",
-    "copy:pages:linux:darwin": "mkdir public && cp -r donate public/donate && cp -r projects public/projects",
+    "create:public": "run-script-os",
+    "create:public:windows": "mkdir public && mkdir public\\donate && mkdir public\\projects",
+    "create:public:linux:darwin": "mkdir public && mkdir public/donate && mkdir public/projects",
+    "copy:pages:windows": "copy /y html\\donate.html public\\donate\\index.html && copy /y html\\projects.html public\\projects\\index.html",
+    "copy:pages:linux:darwin": "cp -r donate public/donate && cp -r projects public/projects",
     "minify:css": "cleancss -O2 -o ./public/css/styles.min.css ./css/styles.css",
     "minify:html": "html-minifier --input-dir html --output-dir ./public --file-ext html --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype --minify-js",
     "build": "npm run copy:pages && npm run minify:css && npm run minify:html",

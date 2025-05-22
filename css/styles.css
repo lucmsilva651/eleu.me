@@ -38,12 +38,12 @@ header * {
 }
 
 header {
-  padding: 10px 50px;
+  padding: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #8c00ff80;
-  height: 75px
+  height: 65px
 }
 
 main {
@@ -62,7 +62,7 @@ main {
   flex-direction: column;
   gap: 20px;
   background-color: #8c00ff21;
-  padding-left: 50px;
+  padding-left: 35px;
   grid-area: 1/1/1/1
 }
 
@@ -87,8 +87,23 @@ main {
 }
 
 .content-right {
-  padding: 30px 50px 30px 40px;
+  padding: 30px 35px 30px 40px;
   grid-area: 1/2/1/6
+}
+
+.content-right * {
+  padding: 0;
+  margin: 0;
+}
+
+.content-right h1,
+.content-right h2 {
+  padding-bottom: 10px;
+}
+
+.content-right h1:not(:first-child),
+.content-right h2:not(:first-child) {
+  margin-top: -8px;
 }
 
 footer {
@@ -96,14 +111,14 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 50px;
+  padding: 10px 35px;
   background-color: #8c00ff80
 }
 
 footer img {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(70deg) brightness(99%) contrast(107%);
-  width: 50px;
-  height: 50px
+  width: 42px;
+  height: 42px
 }
 
 footer p {
@@ -119,14 +134,7 @@ footer .left p:not(:first-child) {
   font-size: 1.3em
 }
 
-footer .left {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px
-}
-
 footer .right {
   text-align: right;
-  font-size: .75em
+  font-size: .85em
 }
