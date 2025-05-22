@@ -1,0 +1,6 @@
+{
+  "watch": ["css", "html"],
+  "ext":  "css, html",
+  "ignore": ["node_modules", "public"],
+  "exec": "npm run build && http-server -p 8080 -c-1 --proxy http://localhost:8080"
+}

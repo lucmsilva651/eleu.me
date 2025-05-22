@@ -14,7 +14,7 @@
     "build": "run-script-os",
     "build:windows": "npm run copy:pages && npm run minify:css && npm run minify:html && npm run cleanup:html",
     "build:linux:darwin": "npm run create:public && npm run copy:pages && npm run minify:css && npm run minify:html && npm run cleanup:html",
-    "dev": "npm run build && http-server -p 8080 -c-1 --proxy http://localhost:8080"
+    "dev": "nodemon"
   },
   "dependencies": {
     "clean-css-cli": "^5.6.3",
