@@ -8,7 +8,7 @@
     "copy:pages:windows": "copy /y html\\donate.html public\\donate\\index.html && copy /y html\\projects.html public\\projects\\index.html",
     "copy:pages:linux:darwin": "cp -r html/donate.html public/donate/index.html && cp -r html/projects.html public/projects/index.html",
     "copy:overlay:windows": "copy /y overlay\\* public\\",
-    "copy:overlay:linux:darwin": "cp -r overlay/* public/",
+    "copy:overlay:linux:darwin": "cp -pr overlay/* public/",
     "cleanup:html": "run-script-os",
     "cleanup:html:windows": "del /q public\\donate.html && del /q public\\projects.html",
     "cleanup:html:linux:darwin": "rm -rf public/donate.html && rm -rf public/projects.html",
