@@ -5,10 +5,12 @@
     "create:public:windows": "mkdir public && mkdir public\\donate && mkdir public\\projects",
     "create:public:linux:darwin": "mkdir public && mkdir public/donate && mkdir public/projects",
     "copy:pages:windows": "copy /y html\\donate.html public\\donate\\index.html && copy /y html\\projects.html public\\projects\\index.html",
-    "copy:pages:linux:darwin": "cp -r donate public/donate && cp -r projects public/projects",
+    "copy:pages:linux:darwin": "cp -r html/donate.html public/donate/index.html && cp -r html/projects.html public/projects/index.html",
     "minify:css": "cleancss -O2 -o ./public/css/styles.min.css ./css/styles.css",
     "minify:html": "html-minifier --input-dir html --output-dir ./public --file-ext html --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype --minify-js",
-    "build": "npm run copy:pages && npm run minify:css && npm run minify:html",
+    "build": "run-script-os",
+    "build:windows": "npm run copy:pages && npm run minify:css && npm run minify:html",
+    "build:linux:darwin": "npm run create:public && npm run copy:pages && npm run minify:css && npm run minify:html",
     "dev": "npm run build && http-server -p 8080 -c-1 --proxy http://localhost:8080"
   },
   "dependencies": {
