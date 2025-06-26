@@ -1,7 +1,6 @@
 {
   "scripts": {
     "dev": "nodemon",
-    "build": "run-script-os",
     "copy:pages": "run-script-os",
     "cleanup:html": "run-script-os",
     "create:public": "run-script-os",
@@ -9,14 +8,14 @@
     "create:favicon:windows": "echo . >> public\\i.ico",
     "create:favicon:linux:darwin": "echo . >> public/i.ico",
     "minify:css": "cleancss -O2 -o ./public/css/styles.min.css ./css/styles.css",
+    "minify:js": "terser ./js/index.js --compress --mangle --output ./public/js/index.min.js",
     "cleanup:html:windows": "del /q public\\donate.html && del /q public\\projects.html",
     "cleanup:html:linux:darwin": "rm -rf public/donate.html && rm -rf public/projects.html",
     "create:public:windows": "mkdir public && mkdir public\\donate && mkdir public\\projects",
     "create:public:linux:darwin": "mkdir -p public && mkdir -p public/donate && mkdir -p public/projects",
-    "build:windows": "npm run copy:pages && npm run minify:css && npm run minify:html && npm run create:favicon && npm run cleanup:html",
+    "build": "npm run copy:pages && npm run minify:css && npm run minify:js && npm run minify:html && npm run create:favicon && npm run cleanup:html",
     "copy:pages:linux:darwin": "cp -r html/donate.html public/donate/index.html && cp -r html/projects.html public/projects/index.html",
     "copy:pages:windows": "copy /y html\\donate.html public\\donate\\index.html && copy /y html\\projects.html public\\projects\\index.html",
-    "build:linux:darwin": "npm run create:public && npm run copy:pages && npm run minify:css && npm run minify:html && npm run create:favicon && npm run cleanup:html",
     "minify:html": "html-minifier-terser --input-dir html --output-dir ./public --file-ext html --minify-urls --collapse-whitespace --remove-comments --remove-optional-tags --remove-tag-whitespace --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype"
   },
   "dependencies": {
@@ -24,6 +23,7 @@
     "html-minifier-terser": "^7.2.0",
     "http-server": "^14.1.1",
     "nodemon": "^3.1.10",
-    "run-script-os": "^1.1.6"
+    "run-script-os": "^1.1.6",
+    "terser": "^5.43.1"
   }
 }
