@@ -1,0 +1,28 @@
+header {
+  border-bottom: solid 1px #1d1d25;
+  justify-content: space-between;
+  background-color: #24242e;
+  align-items: center;
+  padding: 10px 60px;
+  display: flex;
+}
+
+header img {
+  width: 24px;
+  height: 24px;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+header .right-side-mobile {
+  display: none;
+}

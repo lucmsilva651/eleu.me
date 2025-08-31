@@ -1,0 +1,85 @@
+@media screen and (max-width: 1200px) {
+  .icon-grid {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 20px 0 40px 0;
+    display: grid;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  section#home>.please-scroll {
+    display: none;
+  }
+
+  .icon-grid {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px 0 40px 0;
+    display: grid;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  header .right-side {
+    display: none;
+  }
+
+  header .right-side-mobile {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header, section, #alertBar {
+    padding: 20px 35px;
+  }
+
+  header {
+    flex-direction: column;
+    padding-bottom: 30px;
+    gap: 8px;
+  }
+  
+  header .logo {
+    font-size: 36px;
+  }
+
+  section#home>.content img {
+    border-radius: 50%;
+    margin-bottom: 5px;
+    height: auto;
+    width: 150px;
+  }
+
+  section#home>.content {
+    padding: 40px 0px;
+    height: revert;
+    margin: 0;
+  }
+
+  section#home>.content>.below-photo>h1 {
+    font-size: 36px;
+    color: #fff;
+  }
+
+  .icon-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 0 40px 0;
+    display: grid;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-height: 590px) {
+  section#home>.content {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-height: 370px) {
+  section#home>.content>img {
+    display: none;
+  }
+}

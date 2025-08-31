@@ -1,0 +1,44 @@
+{
+  "scripts": {
+    "dev": "nodemon",
+    "copy:pages": "run-script-os",
+    "create:public": "run-script-os",
+    "copy:redirects": "run-script-os",
+    "minify:css": "npm-run-all minify:css:*",
+    "minify:html": "npm-run-all minify:html:*",
+    "create:public:windows": "mkdir public && mkdir public\\pages",
+    "create:public:linux:darwin": "mkdir -p public && mkdir -p public/pages",
+    "minify:css:alert-bar": "cleancss -O2 -o ./public/css/alert-bar.min.css ./css/alert-bar.css",
+    "cleanup:html": "run-script-os",
+    "cleanup:html:windows": "rmdir /s /q public\\node_modules && rmdir /s /q public\\redirects && rmdir /s /q public\\public",
+    "cleanup:html:linux:darwin": "rm -rf public/node_modules && rm -rf public/redirects && rm -rf public/public",
+    "copy:redirects:windows": "cmd /c \"robocopy redirects public /E || exit 0\"",
+    "copy:redirects:linux:darwin": "cp -r redirects/* public/",
+    "minify:css:fonts": "cleancss -O2 -o ./public/css/fonts.min.css ./css/fonts.css",
+    "minify:css:footer": "cleancss -O2 -o ./public/css/footer.min.css ./css/footer.css",
+    "minify:css:header": "cleancss -O2 -o ./public/css/header.min.css ./css/header.css",
+    "minify:css:home-section": "cleancss -O2 -o ./public/css/home-section.min.css ./css/home-section.css",
+    "minify:css:icon-grid": "cleancss -O2 -o ./public/css/icon-grid.min.css ./css/icon-grid.css",
+    "minify:css:index": "cleancss -O2 -o ./public/css/index.min.css ./css/index.css",
+    "minify:css:project-grid": "cleancss -O2 -o ./public/css/project-grid.min.css ./css/project-grid.css",
+    "minify:css:responsivity": "cleancss -O2 -o ./public/css/responsivity.min.css ./css/responsivity.css",
+    "minify:css:section": "cleancss -O2 -o ./public/css/section.min.css ./css/section.css",
+    "minify:js": "terser ./js/index.js --compress --mangle --output ./public/js/index.min.js",
+    "build": "npm run minify:css && npm run minify:js && npm run minify:js:utils && npm run minify:html && npm run copy:redirects && npm run cleanup:html",
+    "build:vercel": "npm run create:public && npm run minify:css && npm run minify:js && npm run minify:js:utils && npm run minify:html && npm run copy:redirects && npm run copy:pages && npm run cleanup:html",
+    "minify:js:utils": "terser ./js/utils/handleElem.js --compress --mangle --output ./public/js/utils/handleElem.min.js && terser ./js/utils/loadHTML.js --compress --mangle --output ./public/js/utils/loadHTML.min.js && terser ./js/utils/myAge.js --compress --mangle --output ./public/js/utils/myAge.min.js",
+    "minify:html:index": "html-minifier-next --input-dir ./ --output-dir ./public --file-ext html --minify-urls --collapse-whitespace --remove-comments --remove-optional-tags --remove-tag-whitespace --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype",
+    "minify:html:pages": "html-minifier-next --input-dir ./pages --output-dir ./public/pages --file-ext html --minify-urls --collapse-whitespace --remove-comments --remove-optional-tags --remove-tag-whitespace --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype"
+  },
+  "dependencies": {
+    "clean-css-cli": "^5.6.3",
+    "html-minifier-next": "^1.3.3",
+    "http-server": "^14.1.1",
+    "nodemon": "^3.1.10",
+    "run-script-os": "^1.1.6",
+    "terser": "^5.43.1"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

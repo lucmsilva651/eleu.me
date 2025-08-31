@@ -1,0 +1,24 @@
+#alertBar {
+  justify-content: space-between;
+  background-color: #20b2aa;
+  align-items: center;
+  padding: 10px 60px;
+  display: none;
+}
+
+#alertBar :first-child {
+  align-items: inherit;
+  display: inherit;
+}
+
+#alertBar i:last-child {
+  cursor: pointer;
+}
+
+#alertBar .left-side {
+  gap: 5px;
+}
+
+#alertBar * {
+  color: #000;
+}

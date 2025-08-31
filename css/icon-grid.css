@@ -1,0 +1,24 @@
+.icon-grid {
+  align-items: center;
+  margin-top: 0.9rem;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.icon-grid>li>a {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.icon-grid>li>a>i {
+  font-size: 50px;
+}
+
+.icon-grid>li>a>img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(22%) hue-rotate(123deg) brightness(104%) contrast(104%);
+  height: 50.55px;
+  width: 50px;
+}
