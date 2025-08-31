@@ -25,7 +25,7 @@
     "minify:css:section": "cleancss -O2 -o ./public/css/section.min.css ./css/section.css",
     "minify:js": "terser ./js/index.js --compress --mangle --output ./public/js/index.min.js",
     "build": "npm run minify:css && npm run minify:js && npm run minify:js:utils && npm run minify:html && npm run copy:redirects && npm run cleanup:html",
-    "build:vercel": "npm run create:public && npm run minify:css && npm run minify:js && npm run minify:js:utils && npm run minify:html && npm run copy:redirects && npm run copy:pages && npm run cleanup:html",
+    "build:vercel": "npm run create:public && npm run minify:css && npm run minify:js && npm run minify:js:utils && npm run minify:html && npm run copy:redirects && npm run cleanup:html",
     "minify:js:utils": "terser ./js/utils/handleElem.js --compress --mangle --output ./public/js/utils/handleElem.min.js && terser ./js/utils/loadHTML.js --compress --mangle --output ./public/js/utils/loadHTML.min.js && terser ./js/utils/myAge.js --compress --mangle --output ./public/js/utils/myAge.min.js",
     "minify:html:index": "html-minifier-next --input-dir ./ --output-dir ./public --file-ext html --minify-urls --collapse-whitespace --remove-comments --remove-optional-tags --remove-tag-whitespace --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype",
     "minify:html:pages": "html-minifier-next --input-dir ./pages --output-dir ./public/pages --file-ext html --minify-urls --collapse-whitespace --remove-comments --remove-optional-tags --remove-tag-whitespace --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype"
