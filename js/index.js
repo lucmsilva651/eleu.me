@@ -16,7 +16,7 @@ onDOMLoad(() => {
   loadHTML("home", "/pages/home-section.html");
   loadHTML("experience", "/pages/experience.html");
   loadHTML("social", "/pages/social.html");
-  loadHTML("projects", "/pages/projects.html");
+  // loadHTML("projects", "/pages/projects.html");
   loadHTML("donate", "/pages/donate.html");
   loadHTML("footer", "/pages/footer.html");
   
