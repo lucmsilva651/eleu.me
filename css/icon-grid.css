@@ -1,9 +1,10 @@
 .icon-grid {
-  align-items: center;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 20px 0 40px 0;
   margin-top: 0.9rem;
   list-style: none;
-  display: flex;
-  gap: 20px;
+  display: grid;
+  gap: 2rem;
 }
 
 .icon-grid>li>a {

@@ -2,7 +2,6 @@
   .icon-grid {
     grid-template-columns: repeat(6, 1fr);
     padding: 20px 0 40px 0;
-    display: grid;
     gap: 2rem;
   }
 }
@@ -14,9 +13,6 @@
 
   .icon-grid {
     grid-template-columns: repeat(4, 1fr);
-    padding: 20px 0 40px 0;
-    display: grid;
-    gap: 2rem;
   }
 }
 
@@ -65,9 +61,6 @@
 
   .icon-grid {
     grid-template-columns: repeat(2, 1fr);
-    padding: 20px 0 40px 0;
-    display: grid;
-    gap: 2rem;
   }
 }
 
