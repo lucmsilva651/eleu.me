@@ -4,14 +4,12 @@ import myAge from "./utils/myAge.min.js";
 
 onDOMLoad(() => {
   loadHTML("header", "/pages/header.html");
-  loadHTML("home", "/pages/home-section.html");
+  loadHTML("home", "/pages/home-section.html").then(() => {
+    $("myAge").textContent = myAge("2009-07-07");
+  });
   loadHTML("experience", "/pages/experience.html");
   loadHTML("social", "/pages/social.html");
   // loadHTML("projects", "/pages/projects.html");
   loadHTML("donate", "/pages/donate.html");
   loadHTML("footer", "/pages/footer.html");
-  
-  setTimeout(() => {
-    $("myAge").textContent = myAge("2009-07-07");
-  }, 500);
 });
