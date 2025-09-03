@@ -25,6 +25,7 @@
     "minify:css:responsivity": "cleancss -O2 -o ./public/css/responsivity.min.css ./css/responsivity.css",
     "minify:css:section": "cleancss -O2 -o ./public/css/section.min.css ./css/section.css",
     "minify:js:index": "terser ./js/index.js --compress --mangle --output ./public/js/index.min.js",
+    "minify:js:ost": "terser ./js/randomOst.js --compress --mangle --output ./public/js/randomOst.min.js",
     "build": "npm run minify:css && npm run minify:js && npm run minify:js:utils && npm run minify:html && npm run copy:redirects && npm run cleanup:html",
     "build:vercel": "npm run create:public && npm run minify:css && npm run minify:js && npm run minify:js:utils && npm run minify:html && npm run copy:redirects && npm run cleanup:html",
     "minify:js:utils:handleElem": "terser ./js/utils/handleElem.js --compress --mangle --output ./public/js/utils/handleElem.min.js",
