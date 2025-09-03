@@ -9,7 +9,6 @@
     "minify:html": "npm-run-all minify:html:*",
     "create:public:windows": "mkdir public && mkdir public\\pages",
     "create:public:linux:darwin": "mkdir -p public && mkdir -p public/pages",
-    "minify:css:alert-bar": "cleancss -O2 -o ./public/css/alert-bar.min.css ./css/alert-bar.css",
     "cleanup:html": "run-script-os",
     "cleanup:html:windows": "rmdir /s /q public\\node_modules && rmdir /s /q public\\redirects && rmdir /s /q public\\public",
     "cleanup:html:linux:darwin": "rm -rf public/node_modules && rm -rf public/redirects && rm -rf public/public",
