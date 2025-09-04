@@ -5,6 +5,18 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 850px) {
   section#home>.please-scroll {
     display: none;

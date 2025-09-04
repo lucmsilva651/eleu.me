@@ -3,7 +3,8 @@
   align-items: center;
   margin-top: 0.9rem;
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
