@@ -14,3 +14,13 @@
   border-radius: 5px;
   padding: 15px 25px;
 }
+
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  font-size: 13px;
+}

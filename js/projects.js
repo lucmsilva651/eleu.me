@@ -22,12 +22,13 @@ export default async () => {
 
     projectSorted.forEach(project => {
         const li = document.createElement('li');
-        const { html_url, full_name, stargazers_count } = project;
+        const { html_url, full_name, stargazers_count, description } = project;
         const nameProject = full_name.replace('lucmsilva651/', '');
         li.innerHTML = `
             <a href="${html_url}" target="_blank">
                 <p>${nameProject}</p>
                 <p>Stars: <span>${stargazers_count}</span></p>
+                <p class="description">${description !== null ? description : 'No description provided'}</p>
             </a>
         `;
         grid.appendChild(li);
