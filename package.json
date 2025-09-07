@@ -31,6 +31,7 @@
     "minify:js:utils:handleElem": "terser ./js/utils/handleElem.js --compress --mangle --output ./public/js/utils/handleElem.min.js",
     "minify:js:utils:loadHTML": "terser ./js/utils/loadHTML.js --compress --mangle --output ./public/js/utils/loadHTML.min.js",
     "minify:js:utils:myAge": "terser ./js/utils/myAge.js --compress --mangle --output ./public/js/utils/myAge.min.js",
+    "minify:js:projects": "terser ./js/projects.js --compress --mangle --output ./public/js/projects.min.js",
     "minify:html:index": "html-minifier-next --input-dir ./ --output-dir ./public --file-ext html --minify-urls --collapse-whitespace --remove-comments --remove-optional-tags --remove-tag-whitespace --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype",
     "minify:html:pages": "html-minifier-next --input-dir ./pages --output-dir ./public/pages --file-ext html --minify-urls --collapse-whitespace --remove-comments --remove-optional-tags --remove-tag-whitespace --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --use-short-doctype"
   },

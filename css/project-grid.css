@@ -3,7 +3,8 @@
   align-items: center;
   margin-top: 0.9rem;
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
@@ -12,4 +13,14 @@
   background-color: #212121;
   border-radius: 5px;
   padding: 15px 25px;
+}
+
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  font-size: 13px;
 }
