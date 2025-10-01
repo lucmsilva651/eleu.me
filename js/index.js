@@ -1,7 +1,6 @@
 import { $, onDOMLoad } from "./utils/handleElem.min.js";
 import loadHTML from "./utils/loadHTML.min.js";
 import myAge from "./utils/myAge.min.js";
-import randomOst from "./randomOst.min.js";
 import { default as renderProjects } from "./projects.min.js";
 
 onDOMLoad(() => {
@@ -15,8 +14,5 @@ onDOMLoad(() => {
     renderProjects();
   });
   loadHTML("donate", "/pages/donate.html");
-  loadHTML("soundtrack", "/pages/random-ost.html").then(() => {
-    randomOst();
-  });
   loadHTML("footer", "/pages/footer.html");
 });
