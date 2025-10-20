@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   animation: ease-in-out .5s;
   -webkit-user-select: none;

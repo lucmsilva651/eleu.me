@@ -1,91 +1,89 @@
 @media screen and (max-width: 1200px) {
   .icon-grid {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(6, 1fr) !important;
+    gap: 2rem !important;
   }
-}
-
-@media screen and (max-width: 1200px) {
+  
   .project-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
 @media screen and (max-width: 650px) {
   .project-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 }
 
 @media screen and (max-width: 850px) {
   section#home>.please-scroll {
-    display: none;
+    display: none !important;
   }
 
   .icon-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 1.5rem !important;
   }
 }
 
 @media screen and (max-width: 670px) {
   header .right-side {
-    display: none;
+    display: none !important;
   }
 
   header .right-side-mobile {
-    display: flex;
+    display: flex !important;
   }
 }
 
 @media screen and (max-width: 600px) {
   header, section, #alertBar {
-    padding: 20px 35px;
+    padding: 20px 35px !important;
   }
 
   header {
-    flex-direction: column;
-    padding-bottom: 30px;
-    gap: 8px;
+    flex-direction: column !important;
+    padding-bottom: 30px !important;
+    gap: 8px !important;
   }
   
   header .logo {
-    font-size: 36px;
+    font-size: 36px !important;
   }
 
   section#home>.content img {
-    border-radius: 50%;
-    margin-bottom: 5px;
-    height: auto;
-    width: 150px;
+    border-radius: 50% !important;
+    margin-bottom: 5px !important;
+    height: auto !important;
+    width: 150px !important;
   }
 
   section#home>.content {
-    padding: 40px 0px;
-    height: revert;
-    margin: 0;
+    padding: 40px 0px !important;
+    height: revert !important;
+    margin: 0 !important;
   }
 
   section#home>.content>.below-photo>h1 {
-    font-size: 36px;
-    color: #fff;
+    font-size: 36px !important;
+    color: #fff !important;
   }
 
   .icon-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
   }
 }
 
 @media screen and (max-height: 590px) {
   section#home>.content {
-    flex-direction: row;
-    gap: 40px;
+    flex-direction: row !important;
+    gap: 40px !important;
   }
 }
 
 @media screen and (max-height: 370px) {
   section#home>.content>img {
-    display: none;
+    display: none !important;
   }
 }
