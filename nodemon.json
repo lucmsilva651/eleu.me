@@ -1,6 +1,0 @@
-{
-  "ext":  "css, html, js",
-  "ignore": ["node_modules", "public"],
-  "watch": ["css", "pages", "redirects", "js"],
-  "exec": "npm run build && http-server -p 5500 -c-1 --proxy http://localhost:5500"
-}

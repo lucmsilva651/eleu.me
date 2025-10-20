@@ -1,0 +1,11 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-display: auto;
+}
+
+code, pre {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-display: auto;
+}
