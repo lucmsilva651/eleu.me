@@ -3,7 +3,6 @@ html {
 }
 
 * {
-  animation: ease-in-out .5s;
   -webkit-user-select: none;
   box-sizing: border-box;
   user-select: none;

@@ -43,6 +43,23 @@ header ul {
   gap: 15px;
 }
 
+.logo {
+  transition: font-weight 0.2s ease;
+}
+
+.logo:hover {
+  font-weight: 800;
+}
+
+header .right-side li {
+  transition: font-size 0.2s ease, font-weight 0.5s ease;
+}
+
+header .right-side li:hover {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
 header .right-side-mobile {
   display: none;
 }

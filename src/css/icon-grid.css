@@ -20,9 +20,9 @@
 }
 
 .icon-grid>li>a {
-  transition: transform 0.2s ease;
+  transition: scale 0.2s ease;
 }
 
 .icon-grid>li>a:hover {
-  transform: translateY(-3px);
+  scale: 1.05;
 }
