@@ -14,7 +14,7 @@ const calcAge = (d) => {
 
 <template>
   <section id="home">
-    <img src="https://github.com/lucmsilva651.png" alt="GitHub Profile Picture">
+    <img src="https://avatars.githubusercontent.com/u/90426410?s=200" alt="GitHub Profile Picture">
     <div class="below-photo">
       <h1>Welcome!</h1>
       <p>I'm Lucas, a {{ calcAge("2009-07-07") }} y.o. student from Brazil. I have knowledge with web development, hardware, etc.</p>
