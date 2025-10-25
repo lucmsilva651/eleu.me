@@ -1,9 +1,9 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 
-import './css/global/index.css';
-import './css/global/fonts.css';
-import './css/global/responsivity.css';
+import './css/index.css';
+import './css/fonts.css';
+import './css/responsivity.css';
 
 import { OhVueIcon, addIcons } from "oh-vue-icons";
 
