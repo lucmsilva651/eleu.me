@@ -22,7 +22,7 @@ async function getProjects() {
 function getSortedProjects(projects) {
   return projects
     .sort((a, b) => b.stargazers_count - a.stargazers_count)
-    .slice(0, 8);
+    .slice(0, 16);
 }
 
 onMounted(async () => {
