@@ -61,7 +61,7 @@ onMounted(async () => {
   margin-top: 1rem;
 }
 
-.project-grid > li {
+.project-grid li {
   border: 1px solid #24242e;
   background-color: #2a2a35;
   border-radius: 8px;
@@ -69,7 +69,7 @@ onMounted(async () => {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.project-grid > li:hover {
+.project-grid li:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
