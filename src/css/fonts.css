@@ -5,7 +5,7 @@
 }
 
 code, pre {
-  font-family: "Fira Code", monospace;
   font-optical-sizing: auto;
+  font-family: monospace;
   font-display: auto;
 }
