@@ -1,17 +1,6 @@
 @media screen and (max-width: 1200px) {
   .icon-grid {
-    grid-template-columns: repeat(6, 1fr) !important;
     gap: 2rem !important;
-  }
-  
-  .project-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .project-grid {
-    grid-template-columns: 1fr !important;
   }
 }
 
@@ -21,7 +10,6 @@
   }
 
   .icon-grid {
-    grid-template-columns: repeat(4, 1fr) !important;
     gap: 1.5rem !important;
   }
 }
@@ -70,7 +58,6 @@
   }
 
   .icon-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
     gap: 1rem !important;
   }
 }

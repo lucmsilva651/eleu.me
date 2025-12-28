@@ -1,5 +1,5 @@
 .icon-grid {
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   margin-top: 2rem;
   list-style: none;
   display: grid;

@@ -58,7 +58,7 @@ onMounted(async () => {
 <style scoped>
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 20px;
   list-style: none;
   padding: 0;
