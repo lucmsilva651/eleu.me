@@ -3,7 +3,7 @@ import { Icon } from '@iconify/vue';
 import { ref, onMounted } from 'vue';
 
 const apiKey = "25ffd837323c0fc690d0b52687429e75";
-const imageBase = 'https://image.tmdb.org/t/p/original';
+const imageBase = 'https://image.tmdb.org/t/p/w500';
 
 const mediaList = [
   { type: 'tv', id: 64414 },
