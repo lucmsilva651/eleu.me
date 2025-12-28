@@ -4,6 +4,8 @@ import Experience from './pages/Experience.vue';
 import Social from './pages/Social.vue';
 import Projects from './pages/Projects.vue';
 import Donate from './pages/Donate.vue';
+import Things from './pages/Things.vue';
+import Gists from './pages/Gists.vue';
 const year = new Date().getFullYear();
 </script>
 
@@ -28,6 +30,8 @@ const year = new Date().getFullYear();
   <Experience />
   <Social />
   <Projects />
+  <Gists />
+  <Things />
   <Donate />
   <footer>
     <p>&copy; {{ year }} <a href="https://github.com/lucmsilva651" target="_blank" rel="noopener noreferrer">Lucas Gabriel (lucmsilva)</a>.</p>
