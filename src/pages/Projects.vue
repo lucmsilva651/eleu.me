@@ -15,7 +15,7 @@ async function getProjects() {
     return data;
   } catch (err) {
     console.error("Error fetching projects:", err);
-    error.value = "Failed to load projects.";
+    error.value = err;
     return [];
   }
 }
