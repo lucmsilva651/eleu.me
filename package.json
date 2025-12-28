@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "oh-vue-icons": "^1.0.0-rc3",
+    "@iconify/vue": "^5.0.0",
     "vue": "^3.5.22"
   },
   "devDependencies": {

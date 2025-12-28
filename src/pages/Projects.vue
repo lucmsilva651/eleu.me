@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue';
+import { Icon } from '@iconify/vue';
 
 const projects = ref([]);
 const loading = ref(true);
@@ -41,7 +42,10 @@ onMounted(async () => {
       <li v-for="project in projects" :key="project.id">
         <a :href="project.html_url" target="_blank">
           <p class="name">{{ project.name }}</p>
-          <p>⭐ {{ project.stargazers_count }}</p>
+          <div class="repo-stats">
+            <p><Icon icon="tdesign:star" /> {{ project.stargazers_count }}</p>
+            <p><Icon icon="tdesign:fork" /> {{ project.forks_count }}</p>
+          </div>
           <p class="description">
             {{ project.description || "No description provided" }}
           </p>
@@ -93,6 +97,21 @@ onMounted(async () => {
   line-clamp: 1;
   white-space: normal;
   font-size: 13px;
-  color: #aaa;
+  color: hsl(0, 0%, 67%);
+}
+
+.repo-stats,
+.repo-stats * {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.repo-stats {
+  gap: 0.8rem;
+}
+
+.repo-stats * {
+  gap: 0.4rem;
 }
 </style>

@@ -3,20 +3,18 @@
   margin-top: 2rem;
   list-style: none;
   display: grid;
-  gap: 1.2rem;
+  gap: 2rem;
 }
 
 .icon-grid>li>a {
   flex-direction: column;
   align-items: center;
   display: flex;
-  gap: 6px;
+  gap: 0.6rem;
 }
 
-.icon-grid>li>a>img {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(22%) hue-rotate(123deg) brightness(104%) contrast(104%);
-  height: 50.55px;
-  width: 50px;
+.icon-grid>li>a>p {
+  text-align: center;
 }
 
 .icon-grid>li>a {
