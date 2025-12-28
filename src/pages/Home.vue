@@ -24,7 +24,7 @@ const calcAge = (d) => {
 </template>
 
 <style scoped>
-section#home {
+#home {
   background-color: #202029;
   justify-content: center;
   flex-direction: column;
@@ -33,19 +33,19 @@ section#home {
   display: flex;
 }
 
-section#home img {
+#home img {
   border-radius: 50%;
   margin-bottom: 5px;
   height: auto;
   width: 200px;
 }
 
-section#home h1 {
+#home h1 {
   font-size: 48px;
   color: #fff;
 }
 
-section#home * {
+#home * {
   color: #ababab;
 }
 </style>
