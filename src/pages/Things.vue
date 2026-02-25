@@ -11,8 +11,6 @@ const mediaList = [
   { type: 'tv', id: 60572 },
   { type: 'tv', id: 57243 },
   { type: 'tv', id: 86831 },
-  { type: 'movie', id: 726759 },
-  { type: 'tv', id: 289892 },
 ];
 
 const items = ref([]);
