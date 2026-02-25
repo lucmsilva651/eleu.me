@@ -1,7 +1,10 @@
 * {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Google Sans", sans-serif;
+  font-style: normal;
   font-optical-sizing: auto;
   font-display: auto;
+  font-variation-settings:
+    "GRAD" 0;
 }
 
 code, pre {
