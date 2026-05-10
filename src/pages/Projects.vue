@@ -7,7 +7,7 @@ const loading = ref(true);
 const error = ref(null);
 
 async function getProjects() {
-  const url = "https://api.github.com/users/lucmsilva651/repos";
+  const url = "https://api.github.com/search/repositories?q=user:lucmsilva651&sort=stars&order=desc&per_page=16";
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
@@ -28,7 +28,7 @@ function getSortedProjects(projects) {
 
 onMounted(async () => {
   const data = await getProjects();
-  projects.value = getSortedProjects(data);
+  projects.value = Array.isArray(data.items) ? data.items : getSortedProjects(data);
   loading.value = false;
 });
 </script>
