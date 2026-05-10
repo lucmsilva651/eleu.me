@@ -42,9 +42,9 @@ const year = new Date().getFullYear();
 
 <style>
 header {
-  border-bottom: solid 1px #1d1d25;
+  border-bottom: solid 1px var(--color-border-soft);
   justify-content: space-between;
-  background-color: #24242e;
+  background-color: var(--color-bg-surface);
   align-items: center;
   padding: 10px 60px;
   display: flex;
@@ -89,8 +89,8 @@ header .right-side-mobile {
 
 footer {
   line-height: 1.6;
-  border-top: solid 1px #1d1d25;
-  background-color: #24242e;
+  border-top: solid 1px var(--color-border-soft);
+  background-color: var(--color-bg-surface);
   text-align: center;
   padding: 15px 60px;
 }

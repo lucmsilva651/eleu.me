@@ -25,7 +25,7 @@ const calcAge = (d) => {
 
 <style scoped>
 #home {
-  background-color: #202029;
+  background-color: var(--color-bg-hero);
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -42,10 +42,10 @@ const calcAge = (d) => {
 
 #home h1 {
   font-size: 48px;
-  color: #fff;
+  color: var(--color-text-primary);
 }
 
 #home * {
-  color: #ababab;
+  color: var(--color-text-secondary);
 }
 </style>

@@ -66,8 +66,8 @@ onMounted(async () => {
 }
 
 .project-grid li {
-  border: 1px solid #24242e;
-  background-color: #2a2a35;
+  border: 1px solid var(--color-border-soft);
+  background-color: var(--color-bg-card);
   border-radius: 8px;
   padding: 15px 20px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -80,7 +80,7 @@ onMounted(async () => {
 
 .project-grid a {
   text-decoration: none;
-  color: #fff;
+  color: var(--color-text-primary);
 }
 
 .name {
@@ -97,7 +97,7 @@ onMounted(async () => {
   line-clamp: 1;
   white-space: normal;
   font-size: 13px;
-  color: hsl(0, 0%, 67%);
+  color: var(--color-text-muted);
 }
 
 .repo-stats,

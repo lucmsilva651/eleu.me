@@ -2,6 +2,18 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --color-bg-section-even: #22120e;
+  --color-bg-section-odd: #2c1610;
+  --color-bg-surface: #3a1c14;
+  --color-bg-hero: #160905;
+  --color-bg-card: #4c2117;
+  --color-border-soft: #8c3e17;
+  --color-text-primary: #f7e7de;
+  --color-text-secondary: #d8aa96;
+  --color-text-muted: #c6937a;
+}
+
 * {
   -webkit-user-select: none;
   box-sizing: border-box;
@@ -12,7 +24,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--color-text-primary);
 }
 
 section {
@@ -29,9 +41,9 @@ section p {
 }
 
 section:nth-child(even) {
-  background-color: #17171e;
+  background-color: var(--color-bg-section-even);
 }
 
 section:nth-child(odd) {
-  background-color: #1d1d25;
+  background-color: var(--color-bg-section-odd);
 }
