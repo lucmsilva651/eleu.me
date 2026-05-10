@@ -20,16 +20,9 @@ async function getProjects() {
   }
 }
 
-function getSortedProjects(projects) {
-  if (!Array.isArray(projects)) return [];
-  return projects
-    .sort((a, b) => b.stargazers_count - a.stargazers_count)
-    .slice(0, 16);
-}
-
 onMounted(async () => {
   const data = await getProjects();
-  projects.value = Array.isArray(data?.items) ? data.items : getSortedProjects(data);
+  projects.value = Array.isArray(data?.items) ? data.items : [];
   loading.value = false;
 });
 </script>
