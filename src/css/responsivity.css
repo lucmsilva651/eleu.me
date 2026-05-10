@@ -54,7 +54,7 @@
 
   section#home>.content>.below-photo>h1 {
     font-size: 36px !important;
-    color: #fff !important;
+    color: var(--color-text-primary) !important;
   }
 
   .icon-grid {

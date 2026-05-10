@@ -77,8 +77,8 @@ onMounted(fetchMedia);
 }
 
 .media-grid li {
-  border: 1px solid #24242e;
-  background-color: #2a2a35;
+  border: 1px solid var(--color-border-soft);
+  background-color: var(--color-bg-card);
   border-radius: 8px;
   padding: 12px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -100,7 +100,7 @@ onMounted(fetchMedia);
   aspect-ratio: 2 / 3;
   object-fit: cover;
   border-radius: 6px;
-  border: 1px solid #1f1f28;
+  border: 1px solid var(--color-border-soft);
 }
 
 .name {
