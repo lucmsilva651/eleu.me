@@ -12,7 +12,8 @@ async function getProjects() {
     const response = await fetch(url);
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
     const data = await response.json();
-    return data;
+    if (!Array.isArray(data?.items)) throw new Error("Unexpected API response format");
+    return data.items;
   } catch (err) {
     console.error("Error fetching projects:", err);
     error.value = err;
@@ -21,8 +22,7 @@ async function getProjects() {
 }
 
 onMounted(async () => {
-  const data = await getProjects();
-  projects.value = Array.isArray(data?.items) ? data.items : [];
+  projects.value = await getProjects();
   loading.value = false;
 });
 </script>
