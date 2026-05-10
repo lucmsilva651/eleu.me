@@ -12,7 +12,7 @@ async function getProjects() {
     const response = await fetch(url);
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
     const data = await response.json();
-    if (!Array.isArray(data?.items)) throw new Error("Unexpected API response format");
+    if (!Array.isArray(data?.items)) throw new Error("GitHub Search API returned invalid response: expected items array");
     return data.items;
   } catch (err) {
     console.error("Error fetching projects:", err);
