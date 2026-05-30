@@ -13,7 +13,7 @@ const mediaList = [
   { type: 'tv', id: 86831 },
   { type: 'tv', id: 61923 },
   { type: 'tv', id: 94954 },
-  { type: 'tv', id: 289982 },
+  { type: 'tv', id: 289892 },
 ];
 
 const items = ref([]);
