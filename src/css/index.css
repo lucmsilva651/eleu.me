@@ -1,0 +1,49 @@
+:root {
+  --color-bg-section-even: #22120e;
+  --color-bg-section-odd: #2c1610;
+  --color-bg-surface: #3a1c14;
+  --color-bg-hero: #160905;
+  --color-bg-card: #4c2117;
+  --color-border-soft: #8c3e17;
+  --color-text-primary: #f7e7de;
+  --color-text-secondary: #d8aa96;
+  --color-text-muted: #c6937a;
+  --w7-w-bg: var(--color-bg-section-odd);
+}
+
+html {
+  background-color: var(--w7-w-bg);
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+section .window-body {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.icon-grid {
+  gap: 14px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+.icon-grid svg {
+  color: #000;
+}

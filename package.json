@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "7.css": "^0.21.1",
+    "@iconify/vue": "^5.0.0",
+    "vue": "^3.5.32",
+    "vue-router": "^5.0.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.6",
+    "terser": "^5.46.1",
+    "vite": "^8.0.8"
+  }
+}
