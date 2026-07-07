@@ -15,62 +15,67 @@ import { Icon } from "@iconify/vue";
       <ul class="icon-grid">
         <li>
           <a href="https://www.microsoft.com/windows/">
-            <Icon icon="fa6-brands:windows" height="52" />
+            <Icon icon="fa7-brands:windows" height="52" />
           </a>
         </li>
         <li>
           <a href="https://www.kernel.org/">
-            <Icon icon="fa6-brands:linux" height="52" />
+            <Icon icon="fa7-brands:linux" height="52" />
           </a>
         </li>
         <li>
           <a href="https://www.apple.com/macos/">
-            <Icon icon="fa6-brands:apple" height="52" />
+            <Icon icon="fa7-brands:apple" height="52" />
           </a>
         </li>
         <li>
           <a href="https://www.android.com/">
-            <Icon icon="fa6-brands:android" height="52" />
+            <Icon icon="fa7-brands:android" height="52" />
           </a>
         </li>
         <li>
           <a href="https://vuejs.org/">
-            <Icon icon="fa6-brands:vuejs" height="52" />
+            <Icon icon="fa7-brands:vuejs" height="52" />
           </a>
         </li>
         <li>
           <a href="https://www.w3.org/html/">
-            <Icon icon="fa6-brands:html5" height="52" />
+            <Icon icon="fa7-brands:html5" height="52" />
           </a>
         </li>
         <li>
           <a href="https://www.w3.org/Style/CSS/Overview.html">
-            <Icon icon="fa6-brands:css3" height="52" />
+            <Icon icon="fa7-brands:css3" height="52" />
           </a>
         </li>
         <li>
           <a href="https://developer.mozilla.org/docs/Web/JavaScript">
-            <Icon icon="fa6-brands:js" height="52" />
+            <Icon icon="fa7-brands:js" height="52" />
           </a>
         </li>
         <li>
           <a href="https://www.electronjs.org/">
-            <Icon icon="simple-icons:electron" height="52" />
+            <Icon icon="mdi:electron-framework" height="52" />
+          </a>
+        </li>
+        <li>
+          <a href="https://tauri.app/">
+            <Icon icon="simple-icons:tauri" height="52" />
           </a>
         </li>
         <li>
           <a href="https://git-scm.com">
-            <Icon icon="fa6-brands:git" height="52" />
+            <Icon icon="fa7-brands:git-alt" height="52" />
           </a>
         </li>
         <li>
           <a href="https://github.com">
-            <Icon icon="fa6-brands:github" height="52" />
+            <Icon icon="fa7-brands:github" height="52" />
           </a>
         </li>
         <li>
           <a href="https://www.java.com/">
-            <Icon icon="fa6-brands:java" height="52" />
+            <Icon icon="fa7-brands:java" height="52" />
           </a>
         </li>
         <li>
@@ -84,18 +89,23 @@ import { Icon } from "@iconify/vue";
           </a>
         </li>
         <li>
+          <a href="https://isocpp.org/">
+            <Icon icon="mdi:language-cpp" height="52" />
+          </a>
+        </li>
+        <li>
           <a href="https://www.python.org/">
-            <Icon icon="fa6-brands:python" height="52" />
+            <Icon icon="fa7-brands:python" height="52" />
           </a>
         </li>
         <li>
           <a href="https://nodejs.org/">
-            <Icon icon="fa6-brands:node" height="52" />
+            <Icon icon="fa7-brands:node" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://www.json.org/">
-            <Icon icon="simple-icons:json" height="52" />
+          <a href="https://bun.sh/">
+            <Icon icon="simple-icons:bun" height="52" />
           </a>
         </li>
       </ul>
@@ -105,7 +115,7 @@ import { Icon } from "@iconify/vue";
 
 <style scoped>
 #experience {
-  max-width: 460px;
+  max-width: 400px;
 }
 
 #experience .window-body {

@@ -14,10 +14,10 @@ const route = useRoute();
 const router = useRouter();
 
 const spawnPoints = {
-  home: { x: 10, y: 10 },
-  experience: { x: 525, y: 36 },
-  social: { x: 1000, y: 50 },
-  donate: { x: 60, y: 280 },
+  home: { x: 25, y: 20 },
+  experience: { x: 555, y: 36 },
+  social: { x: 985, y: 50 },
+  donate: { x: 90, y: 290 },
 };
 
 const windows = reactive([
