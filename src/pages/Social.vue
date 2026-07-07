@@ -26,7 +26,7 @@ import { Icon } from "@iconify/vue";
           </a>
         </li>
         <li>
-          <a href="https://t.me/lukig1">
+          <a href="https://t.me/LucasAndroid">
             <Icon icon="fa6-brands:telegram" height="52" />
             <p>Telegram</p>
           </a>
