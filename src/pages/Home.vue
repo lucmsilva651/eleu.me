@@ -57,4 +57,12 @@ const calcAge = (d) => {
   font-size: 2.8em;
   margin-bottom: 20px;
 }
+
+@media (max-width: 540px) {
+  #home .window-body {
+    padding: 10px 20px;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 </style>

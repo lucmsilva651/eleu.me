@@ -14,97 +14,97 @@ import { Icon } from "@iconify/vue";
       </p>
       <ul class="icon-grid">
         <li>
-          <a href="https://www.microsoft.com/windows/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.microsoft.com/windows/">
             <Icon icon="fa7-brands:windows" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://www.kernel.org/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.kernel.org/">
             <Icon icon="fa7-brands:linux" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://www.apple.com/macos/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.apple.com/macos/">
             <Icon icon="fa7-brands:apple" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://www.android.com/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.android.com/">
             <Icon icon="fa7-brands:android" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://vuejs.org/">
+          <a target="_blank" rel="noopener noreferrer" href="https://vuejs.org/">
             <Icon icon="fa7-brands:vuejs" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://www.w3.org/html/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.w3.org/html/">
             <Icon icon="fa7-brands:html5" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://www.w3.org/Style/CSS/Overview.html">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.w3.org/Style/CSS/Overview.html">
             <Icon icon="fa7-brands:css3" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://developer.mozilla.org/docs/Web/JavaScript">
+          <a target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/docs/Web/JavaScript">
             <Icon icon="fa7-brands:js" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://www.electronjs.org/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.electronjs.org/">
             <Icon icon="mdi:electron-framework" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://tauri.app/">
+          <a target="_blank" rel="noopener noreferrer" href="https://tauri.app/">
             <Icon icon="simple-icons:tauri" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://git-scm.com">
+          <a target="_blank" rel="noopener noreferrer" href="https://git-scm.com">
             <Icon icon="fa7-brands:git-alt" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://github.com">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com">
             <Icon icon="fa7-brands:github" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://www.java.com/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.java.com/">
             <Icon icon="fa7-brands:java" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://wikipedia.org/wiki/Shell_script">
+          <a target="_blank" rel="noopener noreferrer" href="https://wikipedia.org/wiki/Shell_script">
             <Icon icon="mdi:dollar" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://www.arduino.cc/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.arduino.cc/">
             <Icon icon="simple-icons:arduino" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://isocpp.org/">
+          <a target="_blank" rel="noopener noreferrer" href="https://isocpp.org/">
             <Icon icon="mdi:language-cpp" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://www.python.org/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.python.org/">
             <Icon icon="fa7-brands:python" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://nodejs.org/">
+          <a target="_blank" rel="noopener noreferrer" href="https://nodejs.org/">
             <Icon icon="fa7-brands:node" height="52" />
           </a>
         </li>
         <li>
-          <a href="https://bun.sh/">
+          <a target="_blank" rel="noopener noreferrer" href="https://bun.sh/">
             <Icon icon="simple-icons:bun" height="52" />
           </a>
         </li>

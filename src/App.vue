@@ -14,9 +14,9 @@ const route = useRoute();
 const router = useRouter();
 
 const spawnPoints = {
-  home: { x: 25, y: 20 },
-  experience: { x: 555, y: 36 },
-  social: { x: 985, y: 50 },
+  home: { x: 20, y: 20 },
+  experience: { x: 530, y: 36 },
+  social: { x: 940, y: 50 },
   donate: { x: 90, y: 290 },
 };
 
@@ -170,7 +170,7 @@ const k = () =>
             <li>
               <RouterLink :to="{ path: '/', hash: '#home' }">Home</RouterLink>
             </li>
-            <li><a href="https://blog.lucmsilva.com">Blog</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://blog.lucmsilva.com">Blog</a></li>
             <li>
               <RouterLink :to="{ path: '/', hash: '#experience' }"
                 >Experience</RouterLink
@@ -187,7 +187,7 @@ const k = () =>
             <li>
               <RouterLink :to="{ path: '/', hash: '#home' }">Home</RouterLink>
             </li>
-            <li><a href="https://blog.lucmsilva.com">Blog</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://blog.lucmsilva.com">Blog</a></li>
             <li>
               <RouterLink :to="{ path: '/', hash: '#donate' }">Donate</RouterLink>
             </li>
@@ -211,33 +211,13 @@ const k = () =>
         <div class="footer">
           <p>
             &copy; {{ year }}
-            <a
-              href="https://github.com/lucmsilva651"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Lucas Gabriel (lucmsilva)</a
-            >.
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/lucmsilva651">Lucas Gabriel (lucmsilva)</a>.
             Website developed with
-            <a
-              href="https://vuejs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Vue</a
-            >
+            <a target="_blank" rel="noopener noreferrer" href="https://vuejs.org/">Vue</a>
             and
-            <a
-              href="https://vite.dev/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Vite.</a
-            > 
+            <a target="_blank" rel="noopener noreferrer" href="https://vite.dev/">Vite.</a> 
             Icons by multiple sources via
-            <a
-              href="https://iconify.design/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Iconify</a
-            >.
+            <a target="_blank" rel="noopener noreferrer" href="https://iconify.design/">Iconify</a>.
           </p>
         </div>
       </div>
@@ -372,6 +352,22 @@ header .right-side-mobile {
 
   .desktop-window {
     position: static;
+  }
+  .footer {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  header {
+    flex-direction: column;
+    gap: 5px;
+  }
+  header .right-side {
+    display: none;
+  }
+  header .right-side-mobile {
+    display: flex;
   }
 }
 </style>

@@ -14,49 +14,49 @@ import { Icon } from "@iconify/vue";
       </p>
       <ul class="icon-grid">
         <li>
-          <a href="https://github.com/lucmsilva651">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/lucmsilva651">
             <Icon icon="fa6-brands:github" height="52" />
             <p>GitHub</p>
           </a>
         </li>
         <li>
-          <a href="https://gitlab.com/lucmsilva">
+          <a target="_blank" rel="noopener noreferrer" href="https://gitlab.com/lucmsilva">
             <Icon icon="fa-brands:gitlab" height="52" />
             <p>GitLab</p>
           </a>
         </li>
         <li>
-          <a href="https://t.me/LucasAndroid">
+          <a target="_blank" rel="noopener noreferrer" href="https://t.me/LucasAndroid">
             <Icon icon="fa6-brands:telegram" height="52" />
             <p>Telegram</p>
           </a>
         </li>
         <li>
-          <a href="https://last.fm/user/lucmsilva">
+          <a target="_blank" rel="noopener noreferrer" href="https://last.fm/user/lucmsilva">
             <Icon icon="fa6-brands:lastfm-square" height="52" />
             <p>Last.fm</p>
           </a>
         </li>
         <li>
-          <a href="https://youtube.com/c/lucmsilva651">
+          <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/c/lucmsilva651">
             <Icon icon="fa6-brands:youtube" height="52" />
             <p>YouTube</p>
           </a>
         </li>
         <li>
-          <a href="https://linkedin.com/in/lucmsilva">
+          <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/lucmsilva">
             <Icon icon="fa6-brands:linkedin" height="52" />
             <p>LinkedIn</p>
           </a>
         </li>
         <li>
-          <a href="https://reddit.com/u/lucmsilva">
+          <a target="_blank" rel="noopener noreferrer" href="https://reddit.com/u/lucmsilva">
             <Icon icon="fa6-brands:reddit" height="52" />
             <p>Reddit</p>
           </a>
         </li>
         <li>
-          <a href="https://x.com/lucmsilvagg">
+          <a target="_blank" rel="noopener noreferrer" href="https://x.com/lucmsilvagg">
             <Icon icon="fa6-brands:twitter" height="52" />
             <p>Twitter / X</p>
           </a>
