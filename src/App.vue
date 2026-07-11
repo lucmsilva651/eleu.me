@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onBeforeUnmount, reactive, ref, watch } from "vue";
+import { computed, nextTick, onBeforeUnmount, onMounted, reactive, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import Home from "./pages/Home.vue";
 import Experience from "./pages/Experience.vue";
@@ -9,14 +9,20 @@ const year = new Date().getFullYear();
 
 const desktopRef = ref(null);
 let currentZ = 10;
+const desktopSize = reactive({ width: 0, height: 0 });
+
+const DESIGN_CANVAS = {
+  width: 1330,
+  height: 496.81,
+};
 
 const route = useRoute();
 const router = useRouter();
 
 const spawnPoints = {
-  home: { x: 20, y: 20 },
-  experience: { x: 530, y: 36 },
-  social: { x: 940, y: 50 },
+  home: { x: 25, y: 20 },
+  experience: { x: 555, y: 36 },
+  social: { x: 985, y: 50 },
   donate: { x: 90, y: 290 },
 };
 
@@ -57,13 +63,59 @@ const getSectionFromRoute = () => {
   return sectionIds.includes(section) ? section : null;
 };
 
+const applyCenteredSpawnPoints = () => {
+  const desktopEl = desktopRef.value;
+  if (!desktopEl) return false;
+
+  const offsetX = (desktopEl.clientWidth - DESIGN_CANVAS.width) / 2;
+  const offsetY = (desktopEl.clientHeight - DESIGN_CANVAS.height) / 2;
+
+  windows.forEach((win) => {
+    const spawn = spawnPoints[win.id];
+    if (!spawn) return;
+
+    win.x = Math.round(offsetX + spawn.x);
+    win.y = Math.round(offsetY + spawn.y);
+  });
+
+  return true;
+};
+
+const syncDesktopMetrics = () => {
+  const desktopEl = desktopRef.value;
+  if (!desktopEl) return false;
+
+  desktopSize.width = desktopEl.clientWidth;
+  desktopSize.height = desktopEl.clientHeight;
+
+  return true;
+};
+
+const isMasonryMode = computed(
+  () => desktopSize.width > 0 && desktopSize.height > 0 && (
+    desktopSize.width < DESIGN_CANVAS.width || desktopSize.height < DESIGN_CANVAS.height
+  ),
+);
+
+const applyDesktopLayout = () => {
+  if (!syncDesktopMetrics()) return false;
+
+  if (isMasonryMode.value) return true;
+
+  return applyCenteredSpawnPoints();
+};
+
 const resetToSpawnPoints = () => {
+  if (applyDesktopLayout()) return;
+
   windows.forEach((win) => {
     const spawn = spawnPoints[win.id];
     if (!spawn) return;
     win.x = spawn.x;
     win.y = spawn.y;
   });
+
+  nextTick(applyDesktopLayout);
 };
 
 const syncRouteShape = (section) => {
@@ -96,7 +148,7 @@ const bringToFront = (id) => {
 };
 
 const startDrag = (event, id) => {
-  if (isSingleWindowMode.value) return;
+  if (isSingleWindowMode.value || isMasonryMode.value) return;
   bringToFront(id);
   if (window.matchMedia("(max-width: 900px)").matches) return;
 
@@ -147,6 +199,12 @@ watch(() => route.fullPath, applySectionFromRoute, { immediate: true });
 
 onBeforeUnmount(() => {
   stopDrag();
+  window.removeEventListener("resize", applyDesktopLayout);
+});
+
+onMounted(() => {
+  applyDesktopLayout();
+  window.addEventListener("resize", applyDesktopLayout);
 });
 
 const k = () =>
@@ -196,7 +254,7 @@ const k = () =>
         <div
           ref="desktopRef"
           class="desktop-area"
-          :class="{ 'single-window-mode': isSingleWindowMode }"
+          :class="{ 'single-window-mode': isSingleWindowMode, 'masonry-mode': isMasonryMode }"
         >
           <div
             v-for="win in visibleWindows"
@@ -267,6 +325,13 @@ div.window {
   justify-content: center;
 }
 
+.desktop-area.masonry-mode {
+  columns: 2 360px;
+  column-gap: 16px;
+  column-fill: balance;
+  overflow-y: auto;
+}
+
 .desktop-window {
   position: absolute;
   user-select: none;
@@ -274,6 +339,14 @@ div.window {
 
 .desktop-area.single-window-mode .desktop-window {
   position: static;
+}
+
+.desktop-area.masonry-mode .desktop-window {
+  position: static;
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 16px;
+  break-inside: avoid;
 }
 
 .desktop-window :is(.title-bar, .title-bar-text) {
