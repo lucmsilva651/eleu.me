@@ -8,6 +8,8 @@
     <br>
     <h3>Pix (Brazil / BRL)</h3>
     <p>lucmsilva651@gmail.com</p>
+    <h3>Cryptocurrency</h3>
+    <a href="/crypto.txt">Click here to see options</a>
     </div>
   </section>
 </template>
@@ -19,5 +21,10 @@
 #donate .window-body {
   padding: 10px 20px;
   gap: 0;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
 }
 </style>
