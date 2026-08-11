@@ -1,10 +1,10 @@
 <script setup>
 import { computed, nextTick, onBeforeUnmount, onMounted, reactive, ref, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import Home from "./pages/Home.vue";
-import Experience from "./pages/Experience.vue";
-import Social from "./pages/Social.vue";
-import Donate from "./pages/Donate.vue";
+import Home from "./components/Home.vue";
+import Experience from "./components/Experience.vue";
+import Social from "./components/Social.vue";
+import Donate from "./components/Donate.vue";
 const year = new Date().getFullYear();
 
 const desktopRef = ref(null);
@@ -23,11 +23,17 @@ const spawnPoints = {
   home: { x: 25, y: 20 },
   experience: { x: 555, y: 36 },
   social: { x: 985, y: 50 },
-  donate: { x: 90, y: 290 },
+  donate: { x: 90, y: 270 },
 };
 
 const windows = reactive([
-  { id: "home", component: Home, x: spawnPoints.home.x, y: spawnPoints.home.y, z: 12 },
+  {
+    id: "home",
+    component: Home,
+    x: spawnPoints.home.x,
+    y: spawnPoints.home.y,
+    z: 12
+  },
   {
     id: "experience",
     component: Experience,
@@ -42,7 +48,12 @@ const windows = reactive([
     y: spawnPoints.social.y,
     z: 13,
   },
-  { id: "donate", component: Donate, x: spawnPoints.donate.x, y: spawnPoints.donate.y, z: 14 },
+  { id: "donate",
+    component: Donate,
+    x: spawnPoints.donate.x, 
+    y: spawnPoints.donate.y,
+    z: 14
+  },
 ]);
 
 const sectionIds = windows.map((x) => x.id);
